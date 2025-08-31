@@ -21,10 +21,11 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-background" id="home">
-      <div className="mx-auto max-w-7xl px-3 py-8 sm:px-4 sm:py-12 md:px-6 md:py-16 lg:px-8">
-        {/* Copy */}
-        <div className="mt-2 grid items-start gap-6 sm:gap-8 md:gap-10">
+      <div className="mx-auto max-w-6xl px-3 py-8 sm:px-4 sm:py-12 md:px-6 md:py-16 lg:px-8">
+        {/* Hero Content */}
+        <div className="mt-2">
           <div className="space-y-4 sm:space-y-6">
+
             {/* Glossy pill without using logo/wordmark */}
             <div className="text-center sm:text-left">
               <GlossyPill className="mb-1 text-xs font-semibold uppercase tracking-wide">
@@ -33,14 +34,14 @@ export function Hero() {
             </div>
 
                          <h1 className="text-center sm:text-left text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
-               <span className="relative">
+               <span className="relative group">
                  Elevate
-                 <span className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-accent to-primary rounded-full transform scale-x-0 hover:scale-x-100 transition-transform duration-500 origin-left" style={{ borderRadius: '50% 50% 0 0' }}></span>
+                 <span className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-accent to-primary rounded-full transform scale-x-100 transition-transform duration-500 origin-left" style={{ borderRadius: '50% 50% 0 0' }}></span>
                </span> Your<br />
                Brand<br />
-               With <span className="relative">
+               With <span className="relative group">
                  Impact
-                 <span className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-accent to-primary rounded-full transform scale-x-0 hover:scale-x-100 transition-transform duration-500 origin-left" style={{ borderRadius: '50% 50% 0 0' }}></span>
+                 <span className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-accent to-primary rounded-full transform scale-x-100 transition-transform duration-500 origin-left" style={{ borderRadius: '50% 50% 0 0' }}></span>
                </span>.
              </h1>
                          <p className="max-w-prose text-center sm:text-left text-base sm:text-lg text-balance text-muted-foreground">
@@ -83,6 +84,8 @@ export function Hero() {
               <li>• Instagram content that drives clicks</li>
             </ul>
           </div>
+
+
         </div>
       </div>
     </section>

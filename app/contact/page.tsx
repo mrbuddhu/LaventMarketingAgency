@@ -17,10 +17,13 @@ export default function ContactPage() {
         <div className="flex justify-center">
           <form
             className="grid gap-4 sm:gap-6 max-w-xl w-full px-4 sm:px-0"
-            action="mailto:hello@lavent.com"
-            method="post"
-            encType="text/plain"
+            action="https://formsubmit.co/laavent.co@gmail.com"
+            method="POST"
           >
+            <input type="hidden" name="_subject" value="New Contact Form Submission - Lavent Marketing" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://lavent-marketing.vercel.app/contact" />
             <label className="grid gap-2">
               <span className="text-sm sm:text-base font-medium">Name</span>
               <input 

@@ -91,7 +91,7 @@ export function SiteFooter({ className }: { className?: string }) {
                       <MessageCircle className="h-4 w-4" />
                     </GlossyPill>
                   </Link>
-                  <Link href="mailto:hello@lavent.com" className="focus:outline-none">
+                  <Link href="mailto:laavent.co@gmail.com" className="focus:outline-none">
                     <GlossyPill as="div" className="flex items-center justify-center text-sm font-semibold">
                       <Mail className="h-4 w-4" />
                     </GlossyPill>
@@ -136,7 +136,7 @@ export function SiteFooter({ className }: { className?: string }) {
                 <ul className="mt-4 space-y-3 text-base/6 text-white">
                   <li>
                     <Link
-                      href="https://instagram.com/"
+                      href="https://www.instagram.com/lavent.marketing?igsh=MXdqYnMyemY1NHExMw=="
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline underline-offset-4 text-white"
@@ -146,7 +146,7 @@ export function SiteFooter({ className }: { className?: string }) {
                   </li>
                   <li>
                     <Link
-                      href="https://www.linkedin.com/"
+                      href="https://www.linkedin.com/in/lavent-co-b8b418330"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline underline-offset-4 text-white"
@@ -165,8 +165,8 @@ export function SiteFooter({ className }: { className?: string }) {
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:hello@lavent.com" className="hover:underline underline-offset-4 text-white">
-                      hello@lavent.com
+                    <Link href="mailto:laavent.co@gmail.com" className="hover:underline underline-offset-4 text-white">
+                      laavent.co@gmail.com
                     </Link>
                   </li>
                 </ul>
