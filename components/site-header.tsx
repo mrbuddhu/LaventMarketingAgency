@@ -15,13 +15,13 @@ export function SiteHeader({ className }: { className?: string }) {
     <header
       className={cn("sticky top-0 z-40 w-full bg-transparent supports-[backdrop-filter]:bg-transparent", className)}
     >
-      <div className="mx-auto max-w-6xl px-3 sm:px-4 md:px-6 py-3 sm:py-4">
+      <div className="mx-auto max-w-6xl px-3 sm:px-4 md:px-6 py-4 sm:py-4">
         <div
           className={cn(
             "relative flex items-center justify-between overflow-hidden",
-            "rounded-[20px] sm:rounded-[24px] md:rounded-[36px] lg:rounded-[48px]", // responsive rounded corners
+            "rounded-[28px] sm:rounded-[32px] md:rounded-[36px] lg:rounded-[48px]", // increased mobile border radius
             "glass-shell glass-strong supports-[backdrop-filter]:backdrop-blur-xl backdrop-saturate-150",
-                             "text-white ring-1 ring-white/15 px-3 py-3 sm:px-4 sm:py-3 md:px-6 md:py-4 lg:px-8 lg:py-5",
+                             "text-white ring-1 ring-white/15 px-4 py-4 sm:px-4 sm:py-3 md:px-6 md:py-4 lg:px-8 lg:py-5",
           )}
           style={{ boxShadow: "0 38px 108px rgba(0,0,0,0.38)" }} // increase lift to match footer
         >
