@@ -81,7 +81,7 @@ export default function CharityPage() {
                      <h2 className="text-3xl font-black gradient-heading mb-6">Our Impact So Far</h2>
           <div className="grid gap-8 md:grid-cols-3 max-w-4xl mx-auto">
             <div className="text-center">
-                             <div className="text-4xl font-black text-primary mb-2">$50K+</div>
+                             <div className="text-4xl font-black text-primary mb-2">$5K+</div>
               <p className="text-lg text-muted-foreground">Donated to Charities</p>
             </div>
             <div className="text-center">
