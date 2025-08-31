@@ -19,9 +19,9 @@ export function SiteHeader({ className }: { className?: string }) {
         <div
           className={cn(
             "relative flex items-center justify-between overflow-hidden",
-            "rounded-[24px] sm:rounded-[36px] md:rounded-[48px]", // responsive rounded corners
+            "rounded-[20px] sm:rounded-[24px] md:rounded-[36px] lg:rounded-[48px]", // responsive rounded corners
             "glass-shell glass-strong supports-[backdrop-filter]:backdrop-blur-xl backdrop-saturate-150",
-            "text-white ring-1 ring-white/15 px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-5",
+            "text-white ring-1 ring-white/15 px-3 py-2 sm:px-4 sm:py-3 md:px-6 md:py-4 lg:px-8 lg:py-5",
           )}
           style={{ boxShadow: "0 38px 108px rgba(0,0,0,0.38)" }} // increase lift to match footer
         >
@@ -48,16 +48,16 @@ export function SiteHeader({ className }: { className?: string }) {
             aria-hidden="true"
           />
 
-          <Link href="/" className="relative z-10 flex items-center gap-2 sm:gap-3" aria-label="Lavent Marketing home">
+          <Link href="/" className="relative z-10 flex items-center gap-1.5 sm:gap-2 md:gap-3" aria-label="Lavent Marketing home">
             <Image
               src="/images/logo-main.png"
               alt="Lavent emblem"
               width={56}
               height={56}
               priority
-              className="h-10 w-10 sm:h-14 sm:w-14 md:h-16 md:w-16 rounded-full"
+              className="h-8 w-8 sm:h-10 sm:w-10 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full"
             />
-            <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white">Lavent</span>
+            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-white">Lavent</span>
           </Link>
 
           <div className="relative z-10 hidden md:block">
@@ -92,17 +92,17 @@ export function SiteHeader({ className }: { className?: string }) {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="relative z-10 md:hidden p-2 text-white hover:text-white/80 transition-colors"
+            className="relative z-10 md:hidden p-1.5 sm:p-2 text-white hover:text-white/80 transition-colors"
             aria-label="Toggle mobile menu"
           >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMobileMenuOpen ? <X className="h-5 w-5 sm:h-6 sm:w-6" /> : <Menu className="h-5 w-5 sm:h-6 sm:w-6" />}
           </button>
 
           {/* CTA Pill - visible on all screen sizes */}
           <div className="relative z-10">
-            <a href="/contact" aria-label="Book a strategy call">
-              <GlossyPill as="div" className="cursor-pointer text-sm sm:text-base font-semibold">
-                Book a strategy call
+            <a href="/contact" aria-label="Book a call">
+              <GlossyPill as="div" className="cursor-pointer text-xs sm:text-sm md:text-base font-semibold px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2">
+                Book a call
               </GlossyPill>
             </a>
           </div>
