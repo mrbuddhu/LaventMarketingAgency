@@ -33,9 +33,15 @@ export function Hero() {
             </div>
 
                          <h1 className="text-center sm:text-left text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
-               Elevate Your<br />
+               <span className="relative">
+                 Elevate
+                 <span className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-accent to-primary rounded-full transform scale-x-0 hover:scale-x-100 transition-transform duration-500 origin-left" style={{ borderRadius: '50% 50% 0 0' }}></span>
+               </span> Your<br />
                Brand<br />
-               With Impact.
+               With <span className="relative">
+                 Impact
+                 <span className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-accent to-primary rounded-full transform scale-x-0 hover:scale-x-100 transition-transform duration-500 origin-left" style={{ borderRadius: '50% 50% 0 0' }}></span>
+               </span>.
              </h1>
                          <p className="max-w-prose text-center sm:text-left text-base sm:text-lg text-balance text-muted-foreground">
               {descriptionWords.map((word, index) => (
