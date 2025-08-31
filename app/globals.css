@@ -21,16 +21,16 @@
   --popover: #ffffff;
   --popover-foreground: #000000;
 
-  --primary: #19653f; /* deep green */
+  --primary: #0f4a2e; /* darker deep green */
   --primary-foreground: #ffffff;
 
-  --secondary: #e9f3ee; /* very light tint for subtle surfaces */
+  --secondary: #e0f0e8; /* slightly darker light tint */
   --secondary-foreground: #000000;
 
-  --muted: #f3f6f5; /* light neutral for sections */
+  --muted: #f0f5f2; /* slightly darker light neutral */
   --muted-foreground: #1f2937;
 
-  --accent: #05846f; /* teal accent */
+  --accent: #036b5a; /* darker teal accent */
   --accent-foreground: #ffffff;
 
   --destructive: #dc2626;
@@ -64,7 +64,7 @@
   --popover: #111111;
   --popover-foreground: #ffffff;
 
-  --primary: #3aa07f;
+  --primary: #2d8a6b;
   --primary-foreground: #000000;
 
   --secondary: #1a1a1a;
@@ -73,7 +73,7 @@
   --muted: #1a1a1a;
   --muted-foreground: #d1d5db;
 
-  --accent: #0aa287;
+  --accent: #088f73;
   --accent-foreground: #000000;
 
   --destructive: #ef4444;
