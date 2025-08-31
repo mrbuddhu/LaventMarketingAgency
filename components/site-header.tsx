@@ -21,7 +21,7 @@ export function SiteHeader({ className }: { className?: string }) {
             "relative flex items-center justify-between overflow-hidden",
             "rounded-[20px] sm:rounded-[24px] md:rounded-[36px] lg:rounded-[48px]", // responsive rounded corners
             "glass-shell glass-strong supports-[backdrop-filter]:backdrop-blur-xl backdrop-saturate-150",
-            "text-white ring-1 ring-white/15 px-3 py-2 sm:px-4 sm:py-3 md:px-6 md:py-4 lg:px-8 lg:py-5",
+                             "text-white ring-1 ring-white/15 px-3 py-3 sm:px-4 sm:py-3 md:px-6 md:py-4 lg:px-8 lg:py-5",
           )}
           style={{ boxShadow: "0 38px 108px rgba(0,0,0,0.38)" }} // increase lift to match footer
         >

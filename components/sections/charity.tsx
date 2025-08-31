@@ -39,7 +39,7 @@ export default function CharityPage() {
           <GlossyPill className="mb-4 text-sm font-semibold uppercase tracking-wide">
             Giving Back
           </GlossyPill>
-          <h1 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] text-foreground md:text-7xl lg:text-8xl">
+          <h1 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">
             Our Charity Initiative
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-xl text-balance text-muted-foreground">

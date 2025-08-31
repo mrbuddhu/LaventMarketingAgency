@@ -294,3 +294,11 @@
     animation: fadeInWord 0.6s ease-out forwards;
   }
 }
+
+/* Gradient heading style */
+.gradient-heading {
+  background: linear-gradient(90deg, #005040 0%, #007060 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

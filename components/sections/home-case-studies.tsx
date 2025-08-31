@@ -32,7 +32,7 @@ export default function HomeCaseStudiesSection() {
     <section aria-labelledby="home-case-studies" className="py-12 md:py-16">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16">
         <div className="mb-6 md:mb-8 text-center">
-                      <h2 id="home-case-studies" className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] text-foreground md:text-7xl lg:text-8xl">
+                      <h2 id="home-case-studies" className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">
               Case Studies
             </h2>
             <p className="text-lg md:text-xl text-foreground/80">Two highlights—view the full library for more.</p>

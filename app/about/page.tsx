@@ -16,7 +16,7 @@ export default function AboutPage() {
           <GlossyPill className="mb-4 text-sm font-semibold uppercase tracking-wide">
             Work With Us
           </GlossyPill>
-          <h1 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] text-foreground md:text-7xl lg:text-8xl">About Lavent</h1>
+          <h1 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">About Lavent</h1>
           <p className="mx-auto mt-6 max-w-3xl text-xl text-balance text-muted-foreground">
             Digital Marketing Agency Lavent specialises in growing brand presence across social platforms, blending strategic creativity with data-driven execution. Performs several tasks such as creating of static, dynamic, meta ads for your specific brand which results to boost in engagement and eventually boost in sales. Prior to that also provides passive services such as email-whatsapp marketing and professional studio photo-video shoots for products of yours.
           </p>
@@ -49,7 +49,7 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-black text-foreground mb-6">Who's Behind This?</h2>
+                         <h2 className="text-3xl font-black gradient-heading mb-6">Who's Behind This?</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {founders.map((f) => (
                 <article

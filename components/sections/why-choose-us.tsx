@@ -42,7 +42,7 @@ export function WhyChooseUs() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h2 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] text-foreground md:text-7xl lg:text-8xl">
+          <h2 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">
             Why Choose Us
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-xl text-balance text-muted-foreground">
