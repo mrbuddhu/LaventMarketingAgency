@@ -10,25 +10,25 @@ export default function CharityPage() {
            icon: Heart,
            title: "10% of Every Project",
            description: "We donate 10% of every project's revenue to carefully selected charities that make a real impact.",
-           image: "/case-study-portrait-fashion-brand.png"
+           image: "/images/charity/IMG_3459.png"
          },
          {
            icon: Users,
            title: "Community Impact",
            description: "Your success directly contributes to positive change in communities around the world.",
-           image: "/case-study-portrait-snacks.png"
+           image: "/images/charity/IMG_3466.png"
          },
          {
            icon: Globe,
            title: "Global Reach",
            description: "Supporting causes from local community development to global environmental initiatives.",
-           image: "/case-study-portrait-fmcg.png"
+           image: "/images/charity/IMG_3468.png"
          },
          {
            icon: Target,
            title: "Transparent Giving",
            description: "We provide detailed reports on how your contributions are making a difference.",
-           image: "/case-study-portrait-nam-nam.png"
+           image: "/images/charity/IMG_3470.png"
          }
        ]
 
