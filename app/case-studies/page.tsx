@@ -23,7 +23,7 @@ const studies = [
     }
   },
   {
-    title: "Nam Nam",
+    title: "X Brand",
     body: "International growth; +1.3k followers and ~290% sales lift in ~3 months.",
     image: "/case-study-nam-nam.png",
     details: {
@@ -39,7 +39,7 @@ const studies = [
     }
   },
   {
-    title: "Balaji Wafers",
+    title: "X Brand",
     body: "Professional content overhaul leading to explosive reach and engagement increases.",
     image: "/case-study-portrait-fmcg.png",
     details: {
@@ -55,7 +55,7 @@ const studies = [
     }
   },
   {
-    title: "Pink Matter",
+    title: "X Brand",
     body: "3x sales in 2 months with static+dynamic ads; +70% website traffic via Meta, Email & WhatsApp.",
     image: "/case-study-portrait-fashion-brand.png",
     details: {
@@ -71,7 +71,7 @@ const studies = [
     }
   },
   {
-    title: "Dayout Snacks (NJ)",
+    title: "X Brand (NJ)",
     body: "55% sales lift combining SEO + Meta + automated WhatsApp & email flows.",
     image: "/case-study-portrait-snacks.png",
     details: {
@@ -98,7 +98,7 @@ export default function CaseStudiesPage() {
           <GlossyPill className="mb-4 text-sm font-semibold uppercase tracking-wide">
             View Results
           </GlossyPill>
-          <h1 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">Case Studies</h1>
+          <h1 className="text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Case Studies</h1>
           <p className="mx-auto mt-6 max-w-2xl text-xl text-balance text-muted-foreground">
             Proof over promises—selected transformations driven by growth systems.
           </p>

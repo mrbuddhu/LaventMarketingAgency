@@ -11,7 +11,7 @@ type Study = {
 
 const CASE_STUDIES: Record<string, Study> = {
   "pink-matter": {
-    title: "Pink Matter — Apparel eCommerce",
+    title: "X Brand — Apparel eCommerce",
     summary:
       "In 2 months we combined high-performing static/dynamic creatives with Meta funnels, then amplified with email & WhatsApp flows.",
     bullets: [
@@ -22,20 +22,20 @@ const CASE_STUDIES: Record<string, Study> = {
     metrics: ["3x sales", "+70% website traffic", "Consistent ROAS growth"],
   },
   "dayout-snacks": {
-    title: "Dayout Snacks — FMCG, New Jersey",
+    title: "X Brand — FMCG, New Jersey",
     summary: "We paired SEO with Meta demand capture and automated flows to convert high-intent traffic at scale.",
     bullets: ["SEO foundations and content", "Meta ads to capture commercial intent", "WhatsApp + email automations"],
     metrics: ["+55% sales", "High-intent organic growth", "Stronger repeat purchase"],
   },
   "balaji-wafers": {
-    title: "Balaji Wafers — Social Growth",
+    title: "X Brand — Social Growth",
     summary:
       "Professional content scripts, design, and editing elevated engagement with consistent brand visuals and reels.",
     bullets: ["Content scripting & editing", "Creative design system", "Reels and posts optimization"],
     metrics: ["Massive engagement lift", "Sustained growth in reach", "Higher profile actions"],
   },
   "nam-nam": {
-    title: "Nam Nam — International Social Growth",
+    title: "X Brand — International Social Growth",
     summary: "Algorithm-aware content paired with brand-consistent visuals created rapid growth across markets.",
     bullets: ["Content system built for trends", "Creative discipline", "Cross-market execution"],
     metrics: ["+1.3k followers", "+290% sales in ~3 months"],

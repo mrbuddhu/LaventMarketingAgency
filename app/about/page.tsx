@@ -16,7 +16,7 @@ export default function AboutPage() {
           <GlossyPill className="mb-4 text-sm font-semibold uppercase tracking-wide">
             Work With Us
           </GlossyPill>
-          <h1 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">About Lavent</h1>
+          <h1 className="text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">About Lavent</h1>
           <p className="mx-auto mt-6 max-w-3xl text-xl text-balance text-muted-foreground">
             Digital Marketing Agency Lavent specialises in growing brand presence across social platforms, blending strategic creativity with data-driven execution. Performs several tasks such as creating of static, dynamic, meta ads for your specific brand which results to boost in engagement and eventually boost in sales. Prior to that also provides passive services such as email-whatsapp marketing and professional studio photo-video shoots for products of yours.
           </p>

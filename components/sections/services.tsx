@@ -17,49 +17,49 @@ const services: Service[] = [
     title: "Static Ads",
     short: "First impressions matter. Our static ads are designed to stop the scroll in seconds. These crisp, visually engaging designs help brands speak volumes in one frame—building awareness, curiosity, and immediate interaction. Brands using our static ads have seen an average of 3x more engagement. So ask yourself, are your competitors being seen while you're still getting ignored?",
     imageQuery: "Static Ads portrait",
-    caseStudy: { slug: "pink-matter", brand: "Pink Matter" },
+    caseStudy: { slug: "pink-matter", brand: "X Brand" },
   },
   {
     title: "Dynamic Ads",
     short: "Imagine your product following your customer wherever they go online—but only when they're ready to buy. Our dynamic ads do just that, creating a hyper-personalized experience by showcasing exactly what your customers have browsed or added to cart. This isn't just retargeting—it's precision-driven conversion science that brings back leads ready to purchase.",
     imageQuery: "Dynamic Ads portrait",
-    caseStudy: { slug: "pink-matter", brand: "Pink Matter" },
+    caseStudy: { slug: "pink-matter", brand: "X Brand" },
   },
   {
     title: "Meta Ads (Facebook & Instagram)",
     short: "We're not just running ads—we're building funnels that sell. Our static + dynamic ad strategy on Meta platforms drives mass reach while smart retargeting ensures every lead counts. We've helped brands scale from zero to 6-figure revenues using this method alone. Meanwhile, others are still wasting budgets on 'boost posts'. Where do you want to be?",
     imageQuery: "Meta Ads portrait",
-    caseStudy: { slug: "pink-matter", brand: "Pink Matter" },
+    caseStudy: { slug: "pink-matter", brand: "X Brand" },
   },
   {
     title: "Email Marketing",
     short: "Email is not dead—it's quietly converting leads at scale. Our automated email flows guide your audience from interest to action—whether it's a welcome offer, cart reminder, or loyalty win-back. Many of our clients now earn 30-40% of their total sales from email alone. While others chase cold leads, we nurture warm ones—ready to buy.",
     imageQuery: "Email flows portrait",
-    caseStudy: { slug: "dayout-snacks", brand: "Dayout Snacks" },
+    caseStudy: { slug: "dayout-snacks", brand: "X Brand" },
   },
   {
     title: "WhatsApp Marketing",
     short: "While others wait for customers to reply to emails, our clients are closing sales on WhatsApp—instantly. With over 90% open rates, WhatsApp campaigns cut the noise and create personal, fast-moving conversations. From product drops to customer support, it's the channel your audience already trusts—and we help you monetize it.",
     imageQuery: "WhatsApp Marketing portrait",
-    caseStudy: { slug: "dayout-snacks", brand: "Dayout Snacks" },
+    caseStudy: { slug: "dayout-snacks", brand: "X Brand" },
   },
   {
     title: "SEO for Websites",
     short: "Paid ads give you spikes. SEO gives you a mountain. We optimize your website so you consistently show up on Google when your customer is searching. It's like owning digital real estate—others are paying rent, you're building assets. Every day you delay SEO is traffic you're gifting to your competitors.",
     imageQuery: "SEO growth portrait",
-    caseStudy: { slug: "dayout-snacks", brand: "Dayout Snacks" },
+    caseStudy: { slug: "dayout-snacks", brand: "X Brand" },
   },
   {
     title: "3D Mockups for Amazon & Flipkart",
     short: "Your product's first impression on marketplaces is its last chance to convert. Our 3D mockups don't just look stunning—they boost trust and clicks, helping your products rank higher and sell faster. Customers can't touch your product—but with our visuals, they'll feel like they already have.",
     imageQuery: "3D Mockups portrait",
-    caseStudy: { slug: "nam-nam", brand: "Nam Nam" },
+    caseStudy: { slug: "nam-nam", brand: "X Brand" },
   },
   {
     title: "Content Creation for Instagram",
     short: "We don't post content—we craft digital magnetism. Our Instagram strategy focuses on Reels, carousels, and trends that drive views, shares, and followers. Brands working with us have seen explosive growth in profile visits and website clicks. If content is king—engagement is the crown, and we hand it to you.",
     imageQuery: "Instagram content portrait",
-    caseStudy: { slug: "balaji-wafers", brand: "Balaji Wafers" },
+    caseStudy: { slug: "balaji-wafers", brand: "X Brand" },
   },
 ]
 
@@ -86,7 +86,7 @@ function Services() {
     <section id="services" className="w-full">
       <div className="mx-auto max-w-7xl px-3 py-8 sm:px-4 sm:py-12 md:px-6 md:py-16 lg:px-8">
         <div className="mb-6 text-center">
-                     <h2 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">Services</h2>
+                     <h2 className="text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Services</h2>
           <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-balance text-muted-foreground">
             From attention to conversion to retention—built as one system.
           </p>

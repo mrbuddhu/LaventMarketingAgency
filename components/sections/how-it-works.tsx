@@ -9,7 +9,7 @@ export function HowItWorks() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16">
         {/* Header */}
                 <div className="mb-16 text-center">
-                                                                                         <h2 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">
+                                                                                         <h2 className="text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                 How It Works?
               </h2>
            <p className="mx-auto mt-6 max-w-2xl text-xl text-balance text-muted-foreground">

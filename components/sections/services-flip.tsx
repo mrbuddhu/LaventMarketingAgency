@@ -18,8 +18,8 @@ type Service = {
 
 const caseStudies = {
   "pink-matter": {
-    title: "Pink Matter - Fashion Brand Transformation",
-    brand: "Pink Matter",
+    title: "X Brand - Fashion Brand Transformation",
+    brand: "X Brand",
     challenge: "A fashion brand struggling with low engagement and poor conversion rates on social media.",
     solution: "Implemented a comprehensive static + dynamic ad strategy with precision targeting and creative optimization.",
     results: "Achieved 3x increase in sales, 70% boost in site traffic, and 45% improvement in conversion rates.",
@@ -27,8 +27,8 @@ const caseStudies = {
     image: "/case-study-portrait-fashion-brand.png"
   },
   "dayout-snacks": {
-    title: "Dayout Snacks - Email & WhatsApp Success",
-    brand: "Dayout Snacks",
+    title: "X Brand - Email & WhatsApp Success",
+    brand: "X Brand",
     challenge: "FMCG brand needing to increase repeat purchases and customer lifetime value.",
     solution: "Developed automated email flows and WhatsApp marketing campaigns for personalized customer engagement.",
     results: "55% increase in sales from email marketing, 90%+ WhatsApp open rates, 3x higher customer retention.",
@@ -36,8 +36,8 @@ const caseStudies = {
     image: "/case-study-portrait-nam-nam.png"
   },
   "nam-nam": {
-    title: "Nam Nam - Marketplace Optimization",
-    brand: "Nam Nam",
+    title: "X Brand - Marketplace Optimization",
+    brand: "X Brand",
     challenge: "Product visibility and conversion issues on Amazon and Flipkart marketplaces.",
     solution: "Created stunning 3D mockups and optimized product listings for better visibility and trust.",
     results: "Higher click-through rates, improved product rankings, and 40% increase in marketplace sales.",
@@ -45,8 +45,8 @@ const caseStudies = {
     image: "/case-study-skincare.png"
   },
   "balaji-wafers": {
-    title: "Balaji Wafers - Instagram Growth",
-    brand: "Balaji Wafers",
+    title: "X Brand - Instagram Growth",
+    brand: "X Brand",
     challenge: "Established brand needing to connect with younger audience and increase social media engagement.",
     solution: "Developed Instagram content strategy focusing on Reels, trends, and community engagement.",
     results: "Massive engagement lift, 5x increase in profile visits, and significant boost in brand awareness.",
@@ -60,49 +60,49 @@ const services: Service[] = [
     title: "Static Ads",
     short: "First impressions matter. Our static ads are designed to stop the scroll in seconds. These crisp, visually engaging designs help brands speak volumes in one frame—building awareness, curiosity, and immediate interaction. Brands using our static ads have seen an average of 3x more engagement. So ask yourself, are your competitors being seen while you're still getting ignored?",
     image: "/case-study-portrait-fashion-brand.png",
-    caseStudy: { slug: "pink-matter", brand: "Pink Matter", highlight: "3x sales, +70% site traffic" },
+          caseStudy: { slug: "pink-matter", brand: "X Brand", highlight: "3x sales, +70% site traffic" },
   },
   {
     title: "Dynamic Ads",
     short: "Imagine your product following your customer wherever they go online—but only when they're ready to buy. Our dynamic ads do just that, creating a hyper-personalized experience by showcasing exactly what your customers have browsed or added to cart. This isn't just retargeting—it's precision-driven conversion science that brings back leads ready to purchase.",
     image: "/case-study-portrait-snacks.png",
-    caseStudy: { slug: "pink-matter", brand: "Pink Matter", highlight: "Precision funnels that scale" },
+          caseStudy: { slug: "pink-matter", brand: "X Brand", highlight: "Precision funnels that scale" },
   },
   {
     title: "Meta Ads (Facebook & Instagram)",
     short: "We're not just running ads—we're building funnels that sell. Our static + dynamic ad strategy on Meta platforms drives mass reach while smart retargeting ensures every lead counts. We've helped brands scale from zero to 6-figure revenues using this method alone. Meanwhile, others are still wasting budgets on 'boost posts'. Where do you want to be?",
     image: "/case-study-portrait-fmcg.png",
-    caseStudy: { slug: "pink-matter", brand: "Pink Matter", highlight: "From 0 to 6-figure revenue" },
+          caseStudy: { slug: "pink-matter", brand: "X Brand", highlight: "From 0 to 6-figure revenue" },
   },
   {
     title: "Email Marketing",
     short: "Email is not dead—it's quietly converting leads at scale. Our automated email flows guide your audience from interest to action—whether it's a welcome offer, cart reminder, or loyalty win-back. Many of our clients now earn 30-40% of their total sales from email alone. While others chase cold leads, we nurture warm ones—ready to buy.",
     image: "/case-study-portrait-nam-nam.png",
-    caseStudy: { slug: "dayout-snacks", brand: "Dayout Snacks", highlight: "+55% sales with flows" },
+          caseStudy: { slug: "dayout-snacks", brand: "X Brand", highlight: "+55% sales with flows" },
   },
   {
     title: "WhatsApp Marketing",
     short: "While others wait for customers to reply to emails, our clients are closing sales on WhatsApp—instantly. With over 90% open rates, WhatsApp campaigns cut the noise and create personal, fast-moving conversations. From product drops to customer support, it's the channel your audience already trusts—and we help you monetize it.",
     image: "/case-study-portrait-skincare-brand.png",
-    caseStudy: { slug: "dayout-snacks", brand: "Dayout Snacks", highlight: "90%+ open rates" },
+          caseStudy: { slug: "dayout-snacks", brand: "X Brand", highlight: "90%+ open rates" },
   },
   {
     title: "SEO for Websites",
     short: "Paid ads give you spikes. SEO gives you a mountain. We optimize your website so you consistently show up on Google when your customer is searching. It's like owning digital real estate—others are paying rent, you're building assets. Every day you delay SEO is traffic you're gifting to your competitors.",
     image: "/case-study-nam-nam.png",
-    caseStudy: { slug: "dayout-snacks", brand: "Dayout Snacks", highlight: "Owning high-intent traffic" },
+          caseStudy: { slug: "dayout-snacks", brand: "X Brand", highlight: "Owning high-intent traffic" },
   },
   {
     title: "3D Mockups for Amazon & Flipkart",
     short: "Your product's first impression on marketplaces is its last chance to convert. Our 3D mockups don't just look stunning—they boost trust and clicks, helping your products rank higher and sell faster. Customers can't touch your product—but with our visuals, they'll feel like they already have.",
     image: "/case-study-skincare.png",
-    caseStudy: { slug: "nam-nam", brand: "Nam Nam", highlight: "Higher CTR on marketplaces" },
+          caseStudy: { slug: "nam-nam", brand: "X Brand", highlight: "Higher CTR on marketplaces" },
   },
   {
     title: "Content Creation for Instagram",
     short: "We don't post content—we craft digital magnetism. Our Instagram strategy focuses on Reels, carousels, and trends that drive views, shares, and followers. Brands working with us have seen explosive growth in profile visits and website clicks. If content is king—engagement is the crown, and we hand it to you.",
     image: "/case-study-portrait-fmcg.png",
-    caseStudy: { slug: "balaji-wafers", brand: "Balaji Wafers", highlight: "Massive engagement lift" },
+          caseStudy: { slug: "balaji-wafers", brand: "X Brand", highlight: "Massive engagement lift" },
   },
 ]
 

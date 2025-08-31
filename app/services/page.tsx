@@ -9,7 +9,7 @@ export default function ServicesPage() {
           <GlossyPill className="mb-4 text-sm font-semibold uppercase tracking-wide">
             Start Your Project
           </GlossyPill>
-          <h1 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">Services that turn ideas into impact</h1>
+          <h1 className="text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Services that turn ideas into impact</h1>
           <p className="mx-auto mt-6 max-w-2xl text-xl text-balance text-muted-foreground">
             From attention to conversion to retention—built as one system.
           </p>

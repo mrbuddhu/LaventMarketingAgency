@@ -64,7 +64,7 @@ export default function TestimonialsSection() {
     <section aria-labelledby="testimonials" className="py-12 md:py-16">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16">
         <div className="mb-6 md:mb-8 text-center">
-                     <h2 id="testimonials" className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">
+                     <h2 id="testimonials" className="text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
             Testimonials
           </h2>
           <p className="text-pretty text-lg md:text-xl text-foreground/80">Real outcomes from ambitious brands.</p>

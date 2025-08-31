@@ -32,7 +32,7 @@ export function Hero() {
               </GlossyPill>
             </div>
 
-                         <h1 className="text-center sm:text-left text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+                         <h1 className="text-center sm:text-left text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
                Elevate Your<br />
                Brand<br />
                With Impact.

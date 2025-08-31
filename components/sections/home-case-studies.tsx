@@ -20,7 +20,7 @@ const CASES: Case[] = [
     slug: "skincare-brand",
   },
   {
-    title: "Nam Nam • +1.3k followers in 60 days",
+          title: "X Brand • +1.3k followers in 60 days",
     metric: "290% sales boost",
     imageSrc: "/case-study-nam-nam.png",
     slug: "nam-nam",
@@ -32,7 +32,7 @@ export default function HomeCaseStudiesSection() {
     <section aria-labelledby="home-case-studies" className="py-12 md:py-16">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16">
         <div className="mb-6 md:mb-8 text-center">
-                      <h2 id="home-case-studies" className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">
+                      <h2 id="home-case-studies" className="text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               Case Studies
             </h2>
             <p className="text-lg md:text-xl text-foreground/80">Two highlights—view the full library for more.</p>
