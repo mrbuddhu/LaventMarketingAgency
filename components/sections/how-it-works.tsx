@@ -20,9 +20,9 @@ export function HowItWorks() {
         {/* Process Steps */}
         <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
           {/* Step 1: Strategy & Planning */}
-          <div className="rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 p-5 hover:shadow-3xl transition-all duration-300">
-            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10">
-              <Zap className="h-5 w-5 text-primary" />
+          <div className="group rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 p-5 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer">
+            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+              <Zap className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-500" />
             </div>
                          <h3 className="mb-2 text-lg font-bold gradient-heading">Strategy & Planning</h3>
             <p className="text-sm text-muted-foreground mb-3">
@@ -45,10 +45,10 @@ export function HowItWorks() {
           </div>
 
           {/* Step 2: Lightning Execution */}
-          <div className="rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 p-5 hover:shadow-3xl transition-all duration-300">
-            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10">
+          <div className="group rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 p-5 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer">
+            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
               <div className="relative">
-                <Clock className="h-5 w-5 text-primary" />
+                <Clock className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute -right-1 -top-1 flex h-2 w-2 items-center justify-center rounded-full bg-accent text-xs font-bold text-accent-foreground">
                   48
                 </div>
@@ -75,9 +75,9 @@ export function HowItWorks() {
           </div>
 
           {/* Step 3: Launch & Scale */}
-          <div className="rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 p-5 hover:shadow-3xl transition-all duration-300">
-            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10">
-              <ArrowRight className="h-5 w-5 text-primary" />
+          <div className="group rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 p-5 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer">
+            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+              <ArrowRight className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-500" />
             </div>
                          <h3 className="mb-2 text-lg font-bold gradient-heading">Launch & Scale</h3>
             <p className="text-sm text-muted-foreground mb-3">

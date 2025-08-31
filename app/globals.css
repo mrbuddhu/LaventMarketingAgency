@@ -295,14 +295,7 @@
   }
 }
 
-/* Gradient heading style - matching pill gradient */
+/* Gradient heading style */
 .gradient-heading {
-  background: linear-gradient(
-    to bottom right,
-    color-mix(in oklab, var(--primary) 70%, transparent),
-    color-mix(in oklab, var(--accent) 70%, transparent)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
 }

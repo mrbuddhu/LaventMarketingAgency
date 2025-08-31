@@ -48,7 +48,7 @@ export function SiteHeader({ className }: { className?: string }) {
             aria-hidden="true"
           />
 
-          <Link href="/" className="relative z-10 flex items-center gap-1.5 sm:gap-2 md:gap-3" aria-label="Lavent Marketing home">
+          <Link href="/" className="relative z-10 flex items-center gap-1.5 sm:gap-2 md:gap-3 hover:scale-105 hover:-translate-y-1 transition-all duration-300 ease-out" aria-label="Lavent Marketing home">
             <Image
               src="/images/logo-main.png"
               alt="Lavent emblem"
@@ -65,22 +65,22 @@ export function SiteHeader({ className }: { className?: string }) {
               <NavigationMenu>
                 <ul className="flex items-center gap-6 text-base font-semibold">
                   <li>
-                    <Link href="/services" className="text-white/90 hover:text-white">
+                    <Link href="/services" className="text-white/90 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 ease-out">
                       Services
                     </Link>
                   </li>
                   <li>
-                    <Link href="/case-studies" className="text-white/90 hover:text-white">
+                    <Link href="/case-studies" className="text-white/90 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 ease-out">
                       Case Studies
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about" className="text-white/90 hover:text-white">
+                    <Link href="/about" className="text-white/90 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 ease-out">
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact" className="text-white/90 hover:text-white">
+                    <Link href="/contact" className="text-white/90 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 ease-out">
                       Contact
                     </Link>
                   </li>
@@ -92,7 +92,7 @@ export function SiteHeader({ className }: { className?: string }) {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="relative z-10 md:hidden p-1.5 sm:p-2 text-white hover:text-white/80 transition-colors"
+            className="relative z-10 md:hidden p-1.5 sm:p-2 text-white hover:text-white/80 hover:scale-105 hover:-translate-y-1 transition-all duration-300 ease-out"
             aria-label="Toggle mobile menu"
           >
             {isMobileMenuOpen ? <X className="h-5 w-5 sm:h-6 sm:w-6" /> : <Menu className="h-5 w-5 sm:h-6 sm:w-6" />}

@@ -55,9 +55,9 @@ export function WhyChooseUs() {
           {reasons.map((reason, index) => {
             const IconComponent = reason.icon
             return (
-              <div key={index} className="rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 p-6 hover:shadow-3xl transition-all duration-300">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10">
-                  <IconComponent className="h-6 w-6 text-primary" />
+              <div key={index} className="group rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 p-6 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                  <IconComponent className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-500" />
                 </div>
                                  <h3 className="mb-3 text-xl font-bold gradient-heading">{reason.title}</h3>
                 <p className="text-base text-muted-foreground leading-relaxed">

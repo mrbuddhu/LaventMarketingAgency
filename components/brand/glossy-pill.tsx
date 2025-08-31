@@ -14,7 +14,7 @@ export function GlossyPill({ children, className, as = "div" }: GlossyPillProps)
       className={cn(
         "glass-pill relative inline-flex items-center rounded-full px-6 py-2.5",
         "text-primary-foreground",
-        "transition-all duration-200 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50",
+        "transition-all duration-300 ease-out hover:brightness-110 hover:scale-105 hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50",
         className,
       )}
     >
