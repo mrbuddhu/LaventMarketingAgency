@@ -1,11 +1,11 @@
-import Image from "next/image"
 import { GlossyPill } from "@/components/brand/glossy-pill"
+import { User } from "lucide-react"
 
 const founders = [
-  { name: "Khushan Rathor", img: "/khushan-rathor-portrait.png" },
-  { name: "Pratyush Bhansali", img: "/pratyush-bhansali-portrait.png" },
-  { name: "Priyanshu Kar", img: "/priyanshu-kar-portrait.png" },
-  { name: "Siddh Sanghvi", img: "/siddh-sanghvi-portrait.png" },
+  { name: "Khushan Rathor" },
+  { name: "Pratyush Bhansali" },
+  { name: "Priyanshu Kar" },
+  { name: "Siddh Sanghvi" },
 ]
 
 export default function AboutPage() {
@@ -56,14 +56,8 @@ export default function AboutPage() {
                   key={f.name}
                   className="group overflow-hidden rounded-xl border border-border/60 bg-card/60 backdrop-blur supports-[backdrop-filter]:bg-card/40 shadow-lg hover:shadow-xl transition"
                 >
-                  <div className="relative aspect-[3/4]">
-                    <Image
-                      src={f.img || "/placeholder.svg"}
-                      alt={`Portrait of ${f.name}`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    />
+                  <div className="relative aspect-[3/4] flex items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">
+                    <User className="h-16 w-16 text-primary" />
                     {/* subtle glossy sweep */}
                     <div className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-b from-white/10 via-transparent to-black/15 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   </div>
