@@ -295,21 +295,14 @@
   }
 }
 
-/* Gradient heading style */
+/* Gradient heading style - matching pill gradient */
 .gradient-heading {
-  background: linear-gradient(135deg, #005040 0%, #007060 50%, #009080 100%);
+  background: linear-gradient(
+    to bottom right,
+    color-mix(in oklab, var(--primary) 70%, transparent),
+    color-mix(in oklab, var(--accent) 70%, transparent)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  background-size: 200% 200%;
-  animation: gradientShift 3s ease-in-out infinite;
-}
-
-@keyframes gradientShift {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
 }
