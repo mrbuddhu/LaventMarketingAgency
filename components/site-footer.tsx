@@ -43,9 +43,10 @@ export function SiteFooter({ className }: { className?: string }) {
             aria-hidden="true"
           />
 
-          <div className="relative grid gap-8 sm:gap-10 md:gap-12 px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 md:grid-cols-4">
-            <div className="md:col-span-2 lg:col-span-1">
-              <div className="flex items-center gap-3 sm:gap-4 mb-4">
+          <div className="relative grid gap-8 sm:gap-10 md:gap-12 px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20">
+            {/* Brand Section */}
+            <div className="text-center md:text-left">
+              <div className="flex items-center justify-center md:justify-start gap-3 sm:gap-4 mb-4">
                 <Image
                   src="/images/logo-main.png"
                   alt="Lavent emblem"
@@ -55,37 +56,37 @@ export function SiteFooter({ className }: { className?: string }) {
                 />
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-white">Lavent</h3>
               </div>
-                                     <p className="mt-4 max-w-sm text-base sm:text-lg/7 text-white">
-                         Elevate Your Brand With Impact.<br />
-                         Turning ideas into impact.
-                       </p>
-                       <div className="mt-4 text-xs sm:text-sm text-white space-y-1">
-                         <p className="flex items-center gap-2">
-                           <MapPin className="h-4 w-4" />
-                           Rourkela, Odisha, 769001.
-                         </p>
-                         <p className="flex items-center gap-2">
-                           <Phone className="h-4 w-4" />
-                           +91 9827249743
-                         </p>
-                         <p className="flex items-center gap-2">
-                           <Phone className="h-4 w-4" />
-                           +91 70085 07162
-                         </p>
-                       </div>
+              <p className="mt-4 max-w-sm mx-auto md:mx-0 text-base sm:text-lg/7 text-white">
+                Elevate Your Brand With Impact.<br />
+                Turning ideas into impact.
+              </p>
+              <div className="mt-4 text-xs sm:text-sm text-white space-y-1">
+                <p className="flex items-center justify-center md:justify-start gap-2">
+                  <MapPin className="h-4 w-4" />
+                  Rourkela, Odisha, 769001.
+                </p>
+                <p className="flex items-center justify-center md:justify-start gap-2">
+                  <Phone className="h-4 w-4" />
+                  +91 9827249743
+                </p>
+                <p className="flex items-center justify-center md:justify-start gap-2">
+                  <Phone className="h-4 w-4" />
+                  +91 70085 07162
+                </p>
+              </div>
               <div className="mt-6 space-y-3">
                 <GlossyPill as="button" className="text-base font-semibold">
                   Free Strategy Session
                 </GlossyPill>
                 
                 {/* Contact Icons */}
-                <div className="flex gap-3">
-                  <Link href="tel:+1234567890" className="focus:outline-none">
+                <div className="flex justify-center md:justify-start gap-3">
+                  <Link href="tel:+919827249743" className="focus:outline-none">
                     <GlossyPill as="div" className="flex items-center justify-center text-sm font-semibold">
                       <Phone className="h-4 w-4" />
                     </GlossyPill>
                   </Link>
-                  <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="focus:outline-none">
+                  <Link href="https://wa.me/919827249743" target="_blank" rel="noopener noreferrer" className="focus:outline-none">
                     <GlossyPill as="div" className="flex items-center justify-center text-sm font-semibold">
                       <MessageCircle className="h-4 w-4" />
                     </GlossyPill>
@@ -99,8 +100,9 @@ export function SiteFooter({ className }: { className?: string }) {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 md:col-span-3 md:grid-cols-3 md:grid-rows-2">
-              <div>
+            {/* Links Grid - Mobile: Single column, Desktop: 3 columns */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              <div className="text-center sm:text-left">
                 <h4 className="text-base font-bold uppercase tracking-wide text-white">Company</h4>
                 <ul className="mt-4 space-y-3 text-base/6 text-white">
                   <li>
@@ -120,7 +122,7 @@ export function SiteFooter({ className }: { className?: string }) {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className="text-center sm:text-left">
                 <h4 className="text-base font-bold uppercase tracking-wide text-white">Expertise</h4>
                 <ul className="mt-4 space-y-3 text-base/6 text-white">
                   <li>Static &amp; Dynamic Ads</li>
@@ -129,7 +131,7 @@ export function SiteFooter({ className }: { className?: string }) {
                   <li>SEO</li>
                 </ul>
               </div>
-              <div>
+              <div className="text-center sm:text-left">
                 <h4 className="text-base font-bold uppercase tracking-wide text-white">Connect</h4>
                 <ul className="mt-4 space-y-3 text-base/6 text-white">
                   <li>
@@ -170,10 +172,14 @@ export function SiteFooter({ className }: { className?: string }) {
                 </ul>
               </div>
 
-              <div className="md:col-span-2 md:row-start-2">
-                <h4 className="text-base font-bold uppercase tracking-wide text-white">Newsletter</h4>
-                <p className="mt-4 text-base/6 text-white">Get strategies and case studies in your inbox.</p>
-                <form className="mt-4 flex items-center gap-3" action="#" method="post">
+            </div>
+
+            {/* Newsletter & Charity Section - Full width on mobile */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-base font-bold uppercase tracking-wide text-white text-center sm:text-left">Newsletter</h4>
+                <p className="mt-4 text-base/6 text-white text-center sm:text-left">Get strategies and case studies in your inbox.</p>
+                <form className="mt-4 flex flex-col sm:flex-row items-center gap-3" action="#" method="post">
                   <input
                     type="email"
                     required
@@ -183,15 +189,15 @@ export function SiteFooter({ className }: { className?: string }) {
                   />
                   <button
                     type="submit"
-                    className="rounded-full bg-white px-6 py-3 text-base font-semibold text-[#19653F] shadow hover:bg-white/90"
+                    className="rounded-full bg-white px-6 py-3 text-base font-semibold text-[#19653F] shadow hover:bg-white/90 w-full sm:w-auto"
                   >
                     Join
                   </button>
                 </form>
-                <p className="mt-3 text-sm text-white">No spam. Unsubscribe anytime.</p>
+                <p className="mt-3 text-sm text-white text-center sm:text-left">No spam. Unsubscribe anytime.</p>
               </div>
               
-              <div className="md:row-start-2">
+              <div className="text-center sm:text-left">
                 <h4 className="text-base font-bold uppercase tracking-wide text-white">Charity</h4>
                 <p className="mt-4 text-sm text-white">10% goes to charity.</p>
                 <Link href="/charity" className="mt-4 inline-block">
@@ -203,7 +209,7 @@ export function SiteFooter({ className }: { className?: string }) {
             </div>
           </div>
 
-          <div className="border-t border-white/15 px-8 py-6 text-center text-sm text-white/85 md:px-12">
+          <div className="border-t border-white/15 px-4 sm:px-6 md:px-8 lg:px-12 py-4 sm:py-6 text-center text-xs sm:text-sm text-white/85">
             © {new Date().getFullYear()} Lavent Marketing. All rights reserved.
           </div>
         </div>

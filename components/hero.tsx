@@ -47,17 +47,17 @@ export function Hero() {
                 </span>
               ))}
             </p>
-            <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap items-center gap-3">
               {/* Brand-consistent glossy primary CTA */}
-              <Link href="/contact" className="focus:outline-none w-full sm:w-auto">
-                <GlossyPill as="div" className="cursor-pointer text-sm font-semibold w-full sm:w-auto text-center">
+              <Link href="/contact" className="focus:outline-none">
+                <GlossyPill as="div" className="cursor-pointer text-sm font-semibold text-center">
                   Free Strategy Session
                 </GlossyPill>
               </Link>
               {/* Secondary CTA to case studies */}
               <Link
                 href="/case-studies"
-                className="rounded-full border border-primary px-4 sm:px-5 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/10 w-full sm:w-auto text-center"
+                className="rounded-full border border-primary px-4 sm:px-5 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/10 text-center"
               >
                 View Case Studies
               </Link>
