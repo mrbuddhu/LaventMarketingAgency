@@ -8,11 +8,11 @@ export function SiteFooter({ className }: { className?: string }) {
   return (
     <footer className={cn("mt-16", className)} aria-label="Site footer" id="contact">
       {/* 3D glossy block using brand palette */}
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-3 sm:px-4 md:px-6">
         <div
           className={cn(
             "relative mt-6 overflow-hidden",
-            "rounded-[32px] md:rounded-[44px]",
+            "rounded-[20px] sm:rounded-[24px] md:rounded-[32px] lg:rounded-[44px]",
             "glass-shell glass-strong supports-[backdrop-filter]:backdrop-blur-xl backdrop-saturate-150",
             "text-white ring-1 ring-white/15",
           )}
@@ -43,23 +43,23 @@ export function SiteFooter({ className }: { className?: string }) {
             aria-hidden="true"
           />
 
-          <div className="relative grid gap-12 px-8 py-16 md:grid-cols-4 md:px-12 md:py-20">
-            <div>
-              <div className="flex items-center gap-4 mb-4">
+          <div className="relative grid gap-8 sm:gap-10 md:gap-12 px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 md:grid-cols-4">
+            <div className="md:col-span-2 lg:col-span-1">
+              <div className="flex items-center gap-3 sm:gap-4 mb-4">
                 <Image
                   src="/images/logo-main.png"
                   alt="Lavent emblem"
                   width={64}
                   height={64}
-                  className="h-16 w-16 rounded-lg"
+                  className="h-12 w-12 sm:h-16 sm:w-16 rounded-lg"
                 />
-                <h3 className="text-3xl md:text-4xl font-black text-white">Lavent</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-white">Lavent</h3>
               </div>
-                                     <p className="mt-4 max-w-sm text-lg/7 text-white">
+                                     <p className="mt-4 max-w-sm text-base sm:text-lg/7 text-white">
                          Elevate Your Brand With Impact.<br />
                          Turning ideas into impact.
                        </p>
-                       <div className="mt-4 text-sm text-white space-y-1">
+                       <div className="mt-4 text-xs sm:text-sm text-white space-y-1">
                          <p className="flex items-center gap-2">
                            <MapPin className="h-4 w-4" />
                            Rourkela, Odisha, 769001.
