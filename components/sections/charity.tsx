@@ -53,15 +53,15 @@ export default function CharityPage() {
                    const IconComponent = item.icon
                    return (
                      <div key={index} className="rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 overflow-hidden hover:shadow-3xl transition-all duration-300">
-                       <div className="relative h-48 w-full overflow-hidden">
-                         <Image
-                           src={item.image}
-                           alt={item.title}
-                           fill
-                           className="object-cover"
-                         />
-                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                       </div>
+                                               <div className="relative h-64 w-full overflow-hidden">
+                          <Image
+                            src={item.image}
+                            alt={item.title}
+                            fill
+                            className="object-contain"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+                        </div>
                        <div className="p-6">
                          <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10">
                            <IconComponent className="h-6 w-6 text-primary" />
