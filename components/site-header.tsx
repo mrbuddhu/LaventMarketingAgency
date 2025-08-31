@@ -57,7 +57,7 @@ export function SiteHeader({ className }: { className?: string }) {
               priority
               className="h-8 w-8 sm:h-10 sm:w-10 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full"
             />
-            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-brunson)' }}>Lavent</span>
+            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-white">Lavent</span>
           </Link>
 
           <div className="relative z-10 hidden md:block">
