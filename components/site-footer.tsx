@@ -43,9 +43,9 @@ export function SiteFooter({ className }: { className?: string }) {
             aria-hidden="true"
           />
 
-          <div className="relative grid gap-8 sm:gap-10 md:gap-12 px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20">
-            {/* Brand Section */}
-            <div className="text-center md:text-left">
+          <div className="relative grid gap-8 sm:gap-10 md:gap-12 px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 md:grid-cols-4">
+            {/* Brand Section - Mobile: Full width, Desktop: Grid layout */}
+            <div className="text-center md:text-left md:col-span-2 lg:col-span-1">
               <div className="flex items-center justify-center md:justify-start gap-3 sm:gap-4 mb-4">
                 <Image
                   src="/images/logo-main.png"
@@ -100,8 +100,8 @@ export function SiteFooter({ className }: { className?: string }) {
               </div>
             </div>
 
-            {/* Links Grid - Mobile: Single column, Desktop: 3 columns */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {/* Links Grid - Mobile: Single column, Desktop: Original layout */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2 md:col-span-3 gap-8">
               <div className="text-center sm:text-left">
                 <h4 className="text-base font-bold uppercase tracking-wide text-white">Company</h4>
                 <ul className="mt-4 space-y-3 text-base/6 text-white">
@@ -172,11 +172,7 @@ export function SiteFooter({ className }: { className?: string }) {
                 </ul>
               </div>
 
-            </div>
-
-            {/* Newsletter & Charity Section - Full width on mobile */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div>
+              <div className="md:col-span-2 md:row-start-2">
                 <h4 className="text-base font-bold uppercase tracking-wide text-white text-center sm:text-left">Newsletter</h4>
                 <p className="mt-4 text-base/6 text-white text-center sm:text-left">Get strategies and case studies in your inbox.</p>
                 <form className="mt-4 flex flex-col sm:flex-row items-center gap-3" action="#" method="post">
@@ -197,7 +193,7 @@ export function SiteFooter({ className }: { className?: string }) {
                 <p className="mt-3 text-sm text-white text-center sm:text-left">No spam. Unsubscribe anytime.</p>
               </div>
               
-              <div className="text-center sm:text-left">
+              <div className="md:row-start-2 text-center sm:text-left">
                 <h4 className="text-base font-bold uppercase tracking-wide text-white">Charity</h4>
                 <p className="mt-4 text-sm text-white">10% goes to charity.</p>
                 <Link href="/charity" className="mt-4 inline-block">

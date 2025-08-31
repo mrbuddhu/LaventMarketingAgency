@@ -16,6 +16,45 @@ type Service = {
   }
 }
 
+const caseStudies = {
+  "pink-matter": {
+    title: "Pink Matter - Fashion Brand Transformation",
+    brand: "Pink Matter",
+    challenge: "A fashion brand struggling with low engagement and poor conversion rates on social media.",
+    solution: "Implemented a comprehensive static + dynamic ad strategy with precision targeting and creative optimization.",
+    results: "Achieved 3x increase in sales, 70% boost in site traffic, and 45% improvement in conversion rates.",
+    services: ["Static Ads", "Dynamic Ads", "Meta Ads"],
+    image: "/case-study-portrait-fashion-brand.png"
+  },
+  "dayout-snacks": {
+    title: "Dayout Snacks - Email & WhatsApp Success",
+    brand: "Dayout Snacks",
+    challenge: "FMCG brand needing to increase repeat purchases and customer lifetime value.",
+    solution: "Developed automated email flows and WhatsApp marketing campaigns for personalized customer engagement.",
+    results: "55% increase in sales from email marketing, 90%+ WhatsApp open rates, 3x higher customer retention.",
+    services: ["Email Marketing", "WhatsApp Marketing"],
+    image: "/case-study-portrait-nam-nam.png"
+  },
+  "nam-nam": {
+    title: "Nam Nam - Marketplace Optimization",
+    brand: "Nam Nam",
+    challenge: "Product visibility and conversion issues on Amazon and Flipkart marketplaces.",
+    solution: "Created stunning 3D mockups and optimized product listings for better visibility and trust.",
+    results: "Higher click-through rates, improved product rankings, and 40% increase in marketplace sales.",
+    services: ["3D Mockups", "SEO"],
+    image: "/case-study-skincare.png"
+  },
+  "balaji-wafers": {
+    title: "Balaji Wafers - Instagram Growth",
+    brand: "Balaji Wafers",
+    challenge: "Established brand needing to connect with younger audience and increase social media engagement.",
+    solution: "Developed Instagram content strategy focusing on Reels, trends, and community engagement.",
+    results: "Massive engagement lift, 5x increase in profile visits, and significant boost in brand awareness.",
+    services: ["Content Creation", "Instagram Marketing"],
+    image: "/case-study-portrait-fmcg.png"
+  }
+}
+
 const services: Service[] = [
   {
     title: "Static Ads",
@@ -116,7 +155,7 @@ function FlippableCard({ item, index, onCardClick }: { item: Service; index: num
         className="opacity-0 translate-y-6 transition-all duration-700 data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
       >
         {/* Modern service card */}
-        <div className="relative h-[480px] w-full rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 overflow-hidden hover:shadow-3xl transition-all duration-300 group-hover:scale-[1.02]">
+        <div className="relative h-[480px] md:h-[420px] w-full rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 overflow-hidden hover:shadow-3xl transition-all duration-300 group-hover:scale-[1.02] group-hover:ring-2 group-hover:ring-primary/20">
           {/* Hero Image */}
           <div className="relative h-48 w-full overflow-hidden">
             <Image
@@ -130,37 +169,37 @@ function FlippableCard({ item, index, onCardClick }: { item: Service; index: num
           
           {/* Service content */}
           <div className="flex flex-col h-full p-6">
-            <div className="flex-1 space-y-4">
+            <div className="flex-1 space-y-3 md:space-y-4">
               <div className="flex items-center justify-between">
                 <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
                   <span className="text-primary font-bold text-sm">{index + 1}</span>
                 </div>
                 <span className="rounded-full px-3 py-1 text-xs font-semibold text-primary bg-primary/10">
-                  Premium
+                  Click to view
                 </span>
               </div>
               
               <div>
-                <h3 className="text-xl font-black text-foreground leading-tight mb-3">
+                <h3 className="text-xl font-black text-foreground leading-tight mb-2 md:mb-3">
                   {item.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed line-clamp-6">
+                <p className="text-sm text-muted-foreground leading-relaxed line-clamp-5 md:line-clamp-6">
                   {item.short}
                 </p>
               </div>
             </div>
 
             {/* Case study preview */}
-            <div className="mt-6 pt-4 border-t border-foreground/10">
+            <div className="mt-4 md:mt-6 pt-3 md:pt-4 border-t border-foreground/10">
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs font-semibold text-primary uppercase tracking-wide">Case Study</p>
                   <p className="text-sm font-semibold text-foreground">{item.caseStudy.brand}</p>
                   <p className="text-xs text-muted-foreground">{item.caseStudy.highlight}</p>
                 </div>
-                <span className="text-sm font-semibold text-primary group-hover:translate-x-1 transition-transform">
+                <button className="text-sm font-semibold text-primary hover:text-primary/80 group-hover:translate-x-1 transition-all duration-300 bg-primary/10 hover:bg-primary/20 px-3 py-1 rounded-full">
                   View case →
-                </span>
+                </button>
               </div>
             </div>
           </div>
@@ -172,6 +211,7 @@ function FlippableCard({ item, index, onCardClick }: { item: Service; index: num
 
 export default function ServicesFlip() {
   const [selectedService, setSelectedService] = useState<any>(null)
+  const [selectedCaseStudy, setSelectedCaseStudy] = useState<any>(null)
   const ref = useStaggerVisible()
   
   return (
@@ -219,12 +259,68 @@ export default function ServicesFlip() {
                     <p className="text-sm font-semibold text-foreground">{selectedService.caseStudy.brand}</p>
                     <p className="text-xs text-muted-foreground">{selectedService.caseStudy.highlight}</p>
                   </div>
-                  <a 
-                    href={`/case-studies/${selectedService.caseStudy.slug}`}
-                    className="text-sm font-semibold text-primary hover:underline"
+                  <button 
+                    onClick={() => setSelectedCaseStudy(caseStudies[selectedService.caseStudy.slug])}
+                    className="text-sm font-semibold text-primary hover:text-primary/80 bg-primary/10 hover:bg-primary/20 px-3 py-1 rounded-full transition-all duration-300"
                   >
                     View case study →
-                  </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Case Study Modal */}
+      {selectedCaseStudy && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+          <div className="relative max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-2xl bg-white shadow-2xl">
+            <button
+              onClick={() => setSelectedCaseStudy(null)}
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/80 backdrop-blur hover:bg-white transition-colors"
+            >
+              <X className="h-5 w-5" />
+            </button>
+            
+            <div className="relative h-64 md:h-80 w-full overflow-hidden rounded-t-2xl">
+              <Image
+                src={selectedCaseStudy.image}
+                alt={selectedCaseStudy.title}
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </div>
+            
+            <div className="p-6 md:p-8">
+              <h2 className="text-3xl font-black text-foreground mb-4">{selectedCaseStudy.title}</h2>
+              
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Challenge</h3>
+                  <p className="text-muted-foreground">{selectedCaseStudy.challenge}</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Solution</h3>
+                  <p className="text-muted-foreground">{selectedCaseStudy.solution}</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Results</h3>
+                  <p className="text-muted-foreground">{selectedCaseStudy.results}</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Services Used</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedCaseStudy.services.map((service: string) => (
+                      <span key={service} className="px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full">
+                        {service}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
