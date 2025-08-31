@@ -75,9 +75,11 @@ export function SiteFooter({ className }: { className?: string }) {
                 </p>
               </div>
               <div className="mt-6 space-y-3">
-                <GlossyPill as="button" className="text-base font-semibold">
-                  Free Strategy Session
-                </GlossyPill>
+                <Link href="/contact" className="focus:outline-none">
+                  <GlossyPill as="div" className="cursor-pointer text-base font-semibold">
+                    Free Strategy Session
+                  </GlossyPill>
+                </Link>
                 
                 {/* Contact Icons */}
                 <div className="flex justify-center md:justify-start gap-3">
