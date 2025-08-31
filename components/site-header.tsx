@@ -60,49 +60,52 @@ export function SiteHeader({ className }: { className?: string }) {
             <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white">Lavent</span>
           </Link>
 
-          <nav aria-label="Primary" className="relative z-10 ml-auto">
-            <NavigationMenu className="hidden md:flex">
-              <ul className="flex items-center gap-6 text-base font-semibold">
-                <li>
-                  <Link href="/services" className="text-white/90 hover:text-white">
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/case-studies" className="text-white/90 hover:text-white">
-                    Case Studies
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="text-white/90 hover:text-white">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="text-white/90 hover:text-white">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </NavigationMenu>
-          </nav>
-
-          <div className="relative z-10 ml-6 hidden md:block">
-            <a href="/contact" aria-label="Book a strategy call">
-              <GlossyPill as="div" className="cursor-pointer text-base font-semibold">
-                Book a strategy call
-              </GlossyPill>
-            </a>
+          <div className="relative z-10 hidden md:block">
+            <nav aria-label="Primary">
+              <NavigationMenu>
+                <ul className="flex items-center gap-6 text-base font-semibold">
+                  <li>
+                    <Link href="/services" className="text-white/90 hover:text-white">
+                      Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/case-studies" className="text-white/90 hover:text-white">
+                      Case Studies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about" className="text-white/90 hover:text-white">
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="text-white/90 hover:text-white">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </NavigationMenu>
+            </nav>
           </div>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="relative z-10 ml-4 md:hidden p-2 text-white hover:text-white/80 transition-colors"
+            className="relative z-10 md:hidden p-2 text-white hover:text-white/80 transition-colors"
             aria-label="Toggle mobile menu"
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
+
+          {/* CTA Pill - visible on all screen sizes */}
+          <div className="relative z-10">
+            <a href="/contact" aria-label="Book a strategy call">
+              <GlossyPill as="div" className="cursor-pointer text-sm sm:text-base font-semibold">
+                Book a strategy call
+              </GlossyPill>
+            </a>
+          </div>
         </div>
 
         {/* Mobile menu */}
@@ -153,7 +156,6 @@ export function SiteHeader({ className }: { className?: string }) {
             </div>
           </div>
         )}
-        </div>
       </div>
     </header>
   )
