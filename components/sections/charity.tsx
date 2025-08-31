@@ -66,7 +66,7 @@ export default function CharityPage() {
                          <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10">
                            <IconComponent className="h-6 w-6 text-primary" />
                          </div>
-                         <h3 className="mb-3 text-xl font-bold text-foreground">{item.title}</h3>
+                                                   <h3 className="mb-3 text-xl font-bold gradient-heading">{item.title}</h3>
                          <p className="text-base text-muted-foreground leading-relaxed">
                            {item.description}
                          </p>
@@ -78,7 +78,7 @@ export default function CharityPage() {
 
         {/* Impact Section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-black text-foreground mb-6">Our Impact So Far</h2>
+                     <h2 className="text-3xl font-black gradient-heading mb-6">Our Impact So Far</h2>
           <div className="grid gap-8 md:grid-cols-3 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-4xl font-black text-primary mb-2">$50K+</div>

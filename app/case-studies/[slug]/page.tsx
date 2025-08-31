@@ -50,7 +50,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
     <main className="min-h-dvh bg-white">
       <section className="py-10 md:py-16">
         <div className="mx-auto max-w-5xl px-4 md:px-6">
-          <h1 className="text-4xl md:text-6xl font-black text-[#19653F] text-balance">{study.title}</h1>
+          <h1 className="text-4xl md:text-6xl font-black gradient-heading text-balance">{study.title}</h1>
           <p className="mt-4 text-[#0A0A0A]/80 leading-relaxed">{study.summary}</p>
         </div>
       </section>

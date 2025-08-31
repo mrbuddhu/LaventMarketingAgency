@@ -180,7 +180,7 @@ function FlippableCard({ item, index, onCardClick }: { item: Service; index: num
               </div>
               
               <div>
-                <h3 className="text-xl font-black text-foreground leading-tight mb-2 md:mb-3">
+                                 <h3 className="text-xl font-black gradient-heading leading-tight mb-2 md:mb-3">
                   {item.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed line-clamp-5 md:line-clamp-6">
@@ -249,7 +249,7 @@ export default function ServicesFlip() {
             </div>
             
             <div className="p-6 md:p-8">
-              <h2 className="text-3xl font-black text-foreground mb-4">{selectedService.title}</h2>
+                                 <h2 className="text-3xl font-black gradient-heading mb-4">{selectedService.title}</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">{selectedService.short}</p>
               
               <div className="mt-8 pt-6 border-t border-foreground/10">
@@ -294,7 +294,7 @@ export default function ServicesFlip() {
             </div>
             
             <div className="p-6 md:p-8">
-              <h2 className="text-3xl font-black text-foreground mb-4">{selectedCaseStudy.title}</h2>
+                                 <h2 className="text-3xl font-black gradient-heading mb-4">{selectedCaseStudy.title}</h2>
               
               <div className="space-y-6">
                 <div>

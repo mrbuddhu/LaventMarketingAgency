@@ -9,9 +9,9 @@ export function HowItWorks() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16">
         {/* Header */}
                 <div className="mb-16 text-center">
-                                            <h2 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">
-               How It Works
-             </h2>
+                                                                                         <h2 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">
+                How It Works?
+              </h2>
            <p className="mx-auto mt-6 max-w-2xl text-xl text-balance text-muted-foreground">
              From concept to conversion in record time. Our streamlined process ensures your brand gets the impact it deserves.
            </p>
@@ -24,7 +24,7 @@ export function HowItWorks() {
             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10">
               <Zap className="h-5 w-5 text-primary" />
             </div>
-            <h3 className="mb-2 text-lg font-bold text-foreground">Strategy & Planning</h3>
+                         <h3 className="mb-2 text-lg font-bold gradient-heading">Strategy & Planning</h3>
             <p className="text-sm text-muted-foreground mb-3">
               We dive deep into your brand, audience, and goals. Choose from ongoing partnerships or one-off high-impact projects tailored to your needs.
             </p>
@@ -54,7 +54,7 @@ export function HowItWorks() {
                 </div>
               </div>
             </div>
-            <h3 className="mb-2 text-lg font-bold text-foreground">Lightning Execution</h3>
+                         <h3 className="mb-2 text-lg font-bold gradient-heading">Lightning Execution</h3>
             <p className="text-sm text-muted-foreground mb-3">
               We move at lightning speed. Get drafts, revisions, or final assets within 48 hours. No waiting, just results.
             </p>
@@ -79,7 +79,7 @@ export function HowItWorks() {
             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10">
               <ArrowRight className="h-5 w-5 text-primary" />
             </div>
-            <h3 className="mb-2 text-lg font-bold text-foreground">Launch & Scale</h3>
+                         <h3 className="mb-2 text-lg font-bold gradient-heading">Launch & Scale</h3>
             <p className="text-sm text-muted-foreground mb-3">
               Launch with confidence. Approve and move forward, or stack tasks for continuous growth. Your success is our priority.
             </p>

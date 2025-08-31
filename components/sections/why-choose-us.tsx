@@ -42,9 +42,9 @@ export function WhyChooseUs() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h2 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">
-            Why Choose Us
-          </h2>
+                     <h2 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">
+             Why Choose Us?
+           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-xl text-balance text-muted-foreground">
             We don't just create campaigns—we build growth systems that compound over time.
           </p>
@@ -59,7 +59,7 @@ export function WhyChooseUs() {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10">
                   <IconComponent className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="mb-3 text-xl font-bold text-foreground">{reason.title}</h3>
+                                 <h3 className="mb-3 text-xl font-bold gradient-heading">{reason.title}</h3>
                 <p className="text-base text-muted-foreground leading-relaxed">
                   {reason.description}
                 </p>

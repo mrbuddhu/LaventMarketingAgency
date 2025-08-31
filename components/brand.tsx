@@ -6,7 +6,7 @@ export function BrandComponents() {
     <section aria-labelledby="brand" className="bg-muted/30">
       <CheckerBar height={16} className="w-full" />
       <div className="mx-auto max-w-6xl px-6 py-10 md:py-14">
-        <h2 id="brand" className="text-pretty font-sans text-2xl font-black tracking-tight md:text-3xl">
+                 <h2 id="brand" className="text-pretty font-sans text-2xl font-black tracking-tight md:text-3xl gradient-heading">
           Lavent Brand System
         </h2>
 

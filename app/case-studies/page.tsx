@@ -126,7 +126,7 @@ export default function CaseStudiesPage() {
                     <span className="text-primary font-bold text-sm">{index + 1}</span>
                   </div>
                   <div className="flex-1">
-                    <h2 className="text-xl font-black text-foreground mb-3">{s.title}</h2>
+                    <h2 className="text-xl font-black gradient-heading mb-3">{s.title}</h2>
                     <p className="text-muted-foreground leading-relaxed">{s.body}</p>
                     <div className="mt-4 flex items-center justify-between">
                       <span className="text-xs font-semibold text-primary uppercase tracking-wide">Case Study</span>
@@ -164,23 +164,23 @@ export default function CaseStudiesPage() {
             </div>
             
             <div className="p-6 md:p-8">
-              <h2 className="text-3xl font-black text-foreground mb-4">{selectedStudy.title}</h2>
+              <h2 className="text-3xl font-black gradient-heading mb-4">{selectedStudy.title}</h2>
               <p className="text-lg text-muted-foreground mb-8">{selectedStudy.body}</p>
               
               <div className="grid gap-8 md:grid-cols-2">
                 <div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">The Challenge</h3>
+                  <h3 className="text-xl font-bold gradient-heading mb-3">The Challenge</h3>
                   <p className="text-muted-foreground">{selectedStudy.details.challenge}</p>
                 </div>
                 
                 <div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">Our Solution</h3>
+                  <h3 className="text-xl font-bold gradient-heading mb-3">Our Solution</h3>
                   <p className="text-muted-foreground">{selectedStudy.details.solution}</p>
                 </div>
               </div>
               
               <div className="mt-8">
-                <h3 className="text-xl font-bold text-foreground mb-4">Results</h3>
+                <h3 className="text-xl font-bold gradient-heading mb-4">Results</h3>
                 <div className="grid gap-3 md:grid-cols-2">
                   {selectedStudy.details.results.map((result: string, index: number) => (
                     <div key={index} className="flex items-center gap-3">
@@ -192,7 +192,7 @@ export default function CaseStudiesPage() {
               </div>
               
               <div className="mt-8">
-                <h3 className="text-xl font-bold text-foreground mb-4">Services Used</h3>
+                <h3 className="text-xl font-bold gradient-heading mb-4">Services Used</h3>
                 <div className="flex flex-wrap gap-2">
                   {selectedStudy.details.services.map((service: string, index: number) => (
                     <span

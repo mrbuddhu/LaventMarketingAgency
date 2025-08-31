@@ -86,7 +86,7 @@ function Services() {
     <section id="services" className="w-full">
       <div className="mx-auto max-w-7xl px-3 py-8 sm:px-4 sm:py-12 md:px-6 md:py-16 lg:px-8">
         <div className="mb-6 text-center">
-                     <h2 className="text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Services</h2>
+                     <h2 className="text-pretty font-sans text-5xl font-black leading-tight tracking-[-0.02em] gradient-heading md:text-7xl lg:text-8xl">Services</h2>
           <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-balance text-muted-foreground">
             From attention to conversion to retention—built as one system.
           </p>
@@ -132,7 +132,7 @@ function Services() {
               </div>
               {/* Content */}
               <div className="mt-4 p-4">
-                <h3 className="text-xl font-black text-foreground mb-3">{s.title}</h3>
+                                 <h3 className="text-xl font-black gradient-heading mb-3">{s.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed line-clamp-4">{s.short}</p>
               </div>
             </div>
@@ -179,7 +179,7 @@ function Services() {
             </div>
             
             <div className="p-6 md:p-8">
-              <h2 className="text-3xl font-black text-foreground mb-4">{selectedService.title}</h2>
+              <h2 className="text-3xl font-black gradient-heading mb-4">{selectedService.title}</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">{selectedService.short}</p>
               
               <div className="mt-8 pt-6 border-t border-foreground/10">

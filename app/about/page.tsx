@@ -24,14 +24,14 @@ export default function AboutPage() {
 
         <div className="space-y-16">
           <section>
-            <h2 className="text-3xl font-black text-foreground mb-4">Who we create an impact for?</h2>
+                         <h2 className="text-3xl font-black gradient-heading mb-4">Who we create an impact for?</h2>
             <p className="text-lg text-muted-foreground">
               We create an impact for ambitious brands that want to stay ahead of the curve. The ones who partner with us don't just grow, they set the pace of the market, while others play catch-up. The question isn't whether growth will happen, but whether your brand will lead it.
             </p>
           </section>
 
           <section>
-            <h2 className="text-3xl font-black text-foreground mb-4">The Mission.</h2>
+                         <h2 className="text-3xl font-black gradient-heading mb-4">The Mission.</h2>
             <ul className="space-y-3 text-lg text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">✦</span>

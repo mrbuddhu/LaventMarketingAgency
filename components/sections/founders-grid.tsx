@@ -48,7 +48,7 @@ export default function FoundersGrid({
   return (
     <section className={cn("mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8", className)}>
       <header className="mb-6 md:mb-8">
-        <h2 className="text-balance text-3xl md:text-4xl font-black tracking-tight">Meet the Founders</h2>
+                   <h2 className="text-balance text-3xl md:text-4xl font-black tracking-tight gradient-heading">Meet the Founders</h2>
         <p className="mt-2 text-muted-foreground leading-relaxed max-w-2xl">
           The team shaping brands that don’t just grow—but lead their category.
         </p>
