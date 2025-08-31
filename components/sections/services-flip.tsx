@@ -2,7 +2,8 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { useEffect, useRef } from "react"
+import { X } from "lucide-react"
+import { useState, useEffect, useRef } from "react"
 
 type Service = {
   title: string
