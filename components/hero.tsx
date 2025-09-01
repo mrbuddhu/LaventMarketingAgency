@@ -25,7 +25,7 @@ export function Hero() {
         {/* Hero Content Grid */}
         <div className="mt-2 grid items-start gap-6 sm:gap-8 md:gap-10 lg:grid-cols-5 lg:gap-8">
           {/* Left Column - Text Content */}
-          <div className="space-y-4 sm:space-y-6 order-2 lg:order-1 lg:col-span-3">
+          <div className="space-y-4 sm:space-y-6 order-2 lg:order-1 lg:col-span-3 w-full">
 
             {/* Glossy pill without using logo/wordmark */}
             <div className="text-center sm:text-left">
@@ -47,7 +47,7 @@ export function Hero() {
              </h1>
 
                         {/* Mobile Video - After Impact Text */}
-            <div className="lg:hidden mt-4">
+            <div className="lg:hidden mt-6">
               <img
                 src="/videos/hero.gif"
                 alt="Hero Animation"
@@ -56,6 +56,8 @@ export function Hero() {
                   background: 'white',
                   margin: '0',
                   padding: '0',
+                  marginBottom: '0',
+                  paddingBottom: '0',
                   backgroundColor: 'white',
                   mixBlendMode: 'multiply',
                   borderRadius: '12px'
@@ -63,7 +65,7 @@ export function Hero() {
               />
             </div>
 
-                         <p className="max-w-prose text-center sm:text-left text-base sm:text-lg text-balance text-muted-foreground">
+                         <p className="w-full text-center sm:text-left text-base sm:text-lg text-muted-foreground lg:pr-0 lg:max-w-none">
               {descriptionWords.map((word, index) => (
                 <span
                   key={index}
@@ -105,17 +107,19 @@ export function Hero() {
           </div>
 
                               {/* Right Column - Video (Desktop Only) */}
-          <div className="hidden lg:flex items-start justify-center lg:justify-end order-1 lg:order-2 lg:col-span-2 pt-8">
+          <div className="hidden lg:flex items-start justify-center lg:justify-end order-1 lg:order-2 lg:col-span-2 pt-4">
             <img
               src="/videos/hero.gif"
               alt="Hero Animation"
-              className="w-full h-auto max-w-2xl"
+              className="w-full h-auto max-w-3xl"
               style={{ 
                 background: 'white',
                 margin: '0',
                 padding: '0',
+                marginBottom: '0',
+                paddingBottom: '0',
                 backgroundColor: 'white',
-                height: '300px',
+                height: '350px',
                 objectFit: 'contain',
                 mixBlendMode: 'multiply',
                 borderRadius: '12px'
