@@ -20,7 +20,14 @@ export function HowItWorks() {
         {/* Process Steps */}
         <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
           {/* Step 1: Strategy & Planning */}
-          <div className="group rounded-2xl bg-primary shadow-2xl ring-1 ring-primary/20 p-5 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer">
+          <div className="group relative overflow-hidden rounded-2xl glass-shell glass-strong supports-[backdrop-filter]:backdrop-blur-xl backdrop-saturate-150 text-white ring-1 ring-white/15 p-5 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer transform-gpu perspective-1000"
+               style={{ boxShadow: "0 44px 120px rgba(0,0,0,0.42)" }}>
+            {/* top gloss band */}
+            <div className="pointer-events-none absolute -top-12 left-1/2 h-28 w-[92%] -translate-x-1/2 rounded-full bg-white/25 blur-2xl" aria-hidden="true" />
+            {/* radial glow */}
+            <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(60% 40% at 50% 0%, rgba(255,255,255,0.20), transparent 60%)" }} aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2" style={{ background: "linear-gradient(to bottom, rgba(255,255,255,0.18), rgba(255,255,255,0.06), transparent)" }} aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-0 shadow-[inset_0_-44px_88px_rgba(0,0,0,0.25)]" aria-hidden="true" />
             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
               <Zap className="h-5 w-5 text-white group-hover:scale-110 transition-transform duration-500" />
             </div>
@@ -45,7 +52,14 @@ export function HowItWorks() {
           </div>
 
           {/* Step 2: Lightning Execution */}
-          <div className="group rounded-2xl bg-primary shadow-2xl ring-1 ring-primary/20 p-5 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer">
+          <div className="group relative overflow-hidden rounded-2xl glass-shell glass-strong supports-[backdrop-filter]:backdrop-blur-xl backdrop-saturate-150 text-white ring-1 ring-white/15 p-5 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer transform-gpu perspective-1000"
+               style={{ boxShadow: "0 44px 120px rgba(0,0,0,0.42)" }}>
+            {/* top gloss band */}
+            <div className="pointer-events-none absolute -top-12 left-1/2 h-28 w-[92%] -translate-x-1/2 rounded-full bg-white/25 blur-2xl" aria-hidden="true" />
+            {/* radial glow */}
+            <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(60% 40% at 50% 0%, rgba(255,255,255,0.20), transparent 60%)" }} aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2" style={{ background: "linear-gradient(to bottom, rgba(255,255,255,0.18), rgba(255,255,255,0.06), transparent)" }} aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-0 shadow-[inset_0_-44px_88px_rgba(0,0,0,0.25)]" aria-hidden="true" />
             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
               <div className="relative">
                 <Clock className="h-5 w-5 text-white group-hover:scale-110 transition-transform duration-500" />
@@ -75,7 +89,14 @@ export function HowItWorks() {
           </div>
 
           {/* Step 3: Launch & Scale */}
-          <div className="group rounded-2xl bg-primary shadow-2xl ring-1 ring-primary/20 p-5 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer">
+          <div className="group relative overflow-hidden rounded-2xl glass-shell glass-strong supports-[backdrop-filter]:backdrop-blur-xl backdrop-saturate-150 text-white ring-1 ring-white/15 p-5 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer transform-gpu perspective-1000"
+               style={{ boxShadow: "0 44px 120px rgba(0,0,0,0.42)" }}>
+            {/* top gloss band */}
+            <div className="pointer-events-none absolute -top-12 left-1/2 h-28 w-[92%] -translate-x-1/2 rounded-full bg-white/25 blur-2xl" aria-hidden="true" />
+            {/* radial glow */}
+            <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(60% 40% at 50% 0%, rgba(255,255,255,0.20), transparent 60%)" }} aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2" style={{ background: "linear-gradient(to bottom, rgba(255,255,255,0.18), rgba(255,255,255,0.06), transparent)" }} aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-0 shadow-[inset_0_-44px_88px_rgba(0,0,0,0.25)]" aria-hidden="true" />
             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
               <ArrowRight className="h-5 w-5 text-white group-hover:scale-110 transition-transform duration-500" />
             </div>
