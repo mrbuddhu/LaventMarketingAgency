@@ -118,9 +118,11 @@ export function HowItWorks() {
 
         {/* CTA Section */}
         <div className="mt-16 text-center">
-          <GlossyPill as="div" className="mx-auto inline-flex cursor-pointer text-sm font-semibold">
-            Book Your Free Strategy Session
-          </GlossyPill>
+          <a href="https://cal.com/laventmarketing/strategycall" target="_blank" rel="noopener noreferrer">
+            <GlossyPill as="div" className="mx-auto inline-flex cursor-pointer text-sm font-semibold">
+              Book Your Free Strategy Session
+            </GlossyPill>
+          </a>
         </div>
       </div>
     </section>

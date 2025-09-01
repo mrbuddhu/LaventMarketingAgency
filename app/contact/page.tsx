@@ -5,9 +5,11 @@ export default function ContactPage() {
     <main>
       <div className="mx-auto max-w-7xl px-3 py-8 sm:px-4 sm:py-12 md:px-6 md:py-16 lg:px-8">
         <div className="mb-8 sm:mb-12 md:mb-16 text-center">
-          <GlossyPill className="mb-4 text-sm font-semibold uppercase tracking-wide">
-            Free Strategy Session
-          </GlossyPill>
+          <a href="https://cal.com/laventmarketing/strategycall" target="_blank" rel="noopener noreferrer">
+            <GlossyPill className="mb-4 text-sm font-semibold uppercase tracking-wide">
+              Free Strategy Session
+            </GlossyPill>
+          </a>
                      <h1 className="text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Contact</h1>
           <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-balance text-muted-foreground">
             Let's map your path to impact.

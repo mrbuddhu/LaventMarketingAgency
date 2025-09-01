@@ -75,11 +75,11 @@ export function SiteFooter({ className }: { className?: string }) {
                 </p>
               </div>
               <div className="mt-6 space-y-3">
-                <Link href="/contact" className="focus:outline-none">
+                <a href="https://cal.com/laventmarketing/strategycall" target="_blank" rel="noopener noreferrer" className="focus:outline-none">
                   <GlossyPill as="div" className="cursor-pointer text-sm font-semibold whitespace-nowrap">
                     Free Strategy Session
                   </GlossyPill>
-                </Link>
+                </a>
                 
                 {/* Contact Icons */}
                 <div className="flex justify-center md:justify-start gap-3">

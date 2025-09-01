@@ -79,11 +79,11 @@ export function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-start gap-3">
               {/* Brand-consistent glossy primary CTA */}
-              <Link href="/contact" className="focus:outline-none">
+              <a href="https://cal.com/laventmarketing/strategycall" target="_blank" rel="noopener noreferrer" className="focus:outline-none">
                 <GlossyPill as="div" className="cursor-pointer text-sm font-semibold text-center">
                   Free Strategy Session
                 </GlossyPill>
-              </Link>
+              </a>
               {/* Secondary CTA to case studies */}
               <Link
                 href="/case-studies"

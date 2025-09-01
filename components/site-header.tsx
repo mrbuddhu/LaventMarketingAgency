@@ -100,7 +100,7 @@ export function SiteHeader({ className }: { className?: string }) {
 
           {/* CTA Pill - visible on all screen sizes */}
           <div className="relative z-10">
-            <a href="/contact" aria-label="Book a call">
+            <a href="https://cal.com/laventmarketing/strategycall" aria-label="Book a call" target="_blank" rel="noopener noreferrer">
               <GlossyPill as="div" className="cursor-pointer text-xs sm:text-sm md:text-base font-semibold px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2">
                 Book a call
               </GlossyPill>
@@ -142,15 +142,17 @@ export function SiteHeader({ className }: { className?: string }) {
                   Contact
                 </Link>
                 <div className="pt-2 border-t border-white/20">
-                  <Link
-                    href="/contact"
+                  <a
+                    href="https://cal.com/laventmarketing/strategycall"
                     className="block w-full text-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     <GlossyPill as="div" className="cursor-pointer text-sm font-semibold w-full">
                       Book a strategy call
                     </GlossyPill>
-                  </Link>
+                  </a>
                 </div>
               </nav>
             </div>
