@@ -16,13 +16,13 @@ const services: Service[] = [
   {
     title: "Static Ads",
     short: "First impressions matter. Our static ads are designed to stop the scroll in seconds. These crisp, visually engaging designs help brands speak volumes in one frame—building awareness, curiosity, and immediate interaction. Brands using our static ads have seen an average of 3x more engagement. So ask yourself, are your competitors being seen while you're still getting ignored?",
-    imageQuery: "Static Ads portrait",
+    imageQuery: "/services/static.jpg",
     caseStudy: { slug: "pink-matter", brand: "X Brand" },
   },
   {
     title: "Dynamic Ads",
     short: "Imagine your product following your customer wherever they go online—but only when they're ready to buy. Our dynamic ads do just that, creating a hyper-personalized experience by showcasing exactly what your customers have browsed or added to cart. This isn't just retargeting—it's precision-driven conversion science that brings back leads ready to purchase.",
-    imageQuery: "Dynamic Ads portrait",
+    imageQuery: "/services/dynamic.mp4",
     caseStudy: { slug: "pink-matter", brand: "X Brand" },
   },
   {
@@ -46,13 +46,13 @@ const services: Service[] = [
   {
     title: "SEO for Websites",
     short: "Paid ads give you spikes. SEO gives you a mountain. We optimize your website so you consistently show up on Google when your customer is searching. It's like owning digital real estate—others are paying rent, you're building assets. Every day you delay SEO is traffic you're gifting to your competitors.",
-    imageQuery: "SEO growth portrait",
+    imageQuery: "/services/seo.jpg",
     caseStudy: { slug: "dayout-snacks", brand: "X Brand" },
   },
   {
     title: "3D Mockups for Amazon & Flipkart",
     short: "Your product's first impression on marketplaces is its last chance to convert. Our 3D mockups don't just look stunning—they boost trust and clicks, helping your products rank higher and sell faster. Customers can't touch your product—but with our visuals, they'll feel like they already have.",
-    imageQuery: "3D Mockups portrait",
+    imageQuery: "/services/3d.jpg",
     caseStudy: { slug: "nam-nam", brand: "X Brand" },
   },
   {
@@ -121,12 +121,24 @@ function Services() {
             >
               {/* Portrait media */}
               <div className="relative overflow-hidden rounded-2xl bg-muted shadow-2xl ring-1 ring-foreground/10">
-                {/* Hero Image - Larger */}
-                <img
-                  alt={`${s.title} example`}
-                  src={`/abstract-geometric-shapes.png?height=480&width=300&query=${encodeURIComponent(s.imageQuery)}`}
-                  className="h-[400px] w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+                {/* Hero Image/Video - Larger */}
+                {s.imageQuery.endsWith('.mp4') ? (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="h-[400px] w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                  >
+                    <source src={s.imageQuery} type="video/mp4" />
+                  </video>
+                ) : (
+                  <img
+                    alt={`${s.title} example`}
+                    src={s.imageQuery}
+                    className="h-[400px] w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                  />
+                )}
                 {/* Subtle overlay on hover */}
                 <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-10 bg-black" />
               </div>
@@ -170,11 +182,23 @@ function Services() {
             </button>
             
             <div className="relative h-64 md:h-80 w-full overflow-hidden rounded-t-2xl">
-              <img
-                src={`/abstract-geometric-shapes.png?height=480&width=300&query=${encodeURIComponent(selectedService.imageQuery)}`}
-                alt={selectedService.title}
-                className="w-full h-full object-cover"
-              />
+              {selectedService.imageQuery.endsWith('.mp4') ? (
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-contain"
+                >
+                  <source src={selectedService.imageQuery} type="video/mp4" />
+                </video>
+              ) : (
+                <img
+                  src={selectedService.imageQuery}
+                  alt={selectedService.title}
+                  className="w-full h-full object-contain"
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </div>
             
