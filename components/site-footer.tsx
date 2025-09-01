@@ -93,7 +93,7 @@ export function SiteFooter({ className }: { className?: string }) {
                       <MessageCircle className="h-4 w-4" />
                     </GlossyPill>
                   </Link>
-                  <Link href="mailto:laavent.co@gmail.com" className="focus:outline-none">
+                  <Link href="mailto:elevate@laventmarketing.com" className="focus:outline-none">
                     <GlossyPill as="div" className="flex items-center justify-center text-sm font-semibold">
                       <Mail className="h-4 w-4" />
                     </GlossyPill>
@@ -167,8 +167,8 @@ export function SiteFooter({ className }: { className?: string }) {
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:laavent.co@gmail.com" className="hover:underline underline-offset-4 text-white">
-                      laavent.co@gmail.com
+                    <Link href="mailto:elevate@laventmarketing.com" className="hover:underline underline-offset-4 text-white">
+                      elevate@laventmarketing.com
                     </Link>
                   </li>
                 </ul>
