@@ -74,15 +74,15 @@ export function SiteFooter({ className }: { className?: string }) {
                   +91 70085 07162
                 </p>
               </div>
-              <div className="mt-6 space-y-3">
+              <div className="mt-6 space-y-8">
                 <a href="https://cal.com/laventmarketing/strategycall" target="_blank" rel="noopener noreferrer" className="focus:outline-none">
-                  <GlossyPill as="div" className="cursor-pointer text-sm font-semibold whitespace-nowrap">
+                  <GlossyPill as="div" className="cursor-pointer text-sm font-semibold whitespace-nowrap w-auto md:w-full">
                     Free Strategy Session
                   </GlossyPill>
                 </a>
                 
                 {/* Contact Icons */}
-                <div className="flex justify-center md:justify-start gap-3">
+                <div className="flex justify-center md:justify-start gap-1 md:gap-2 w-full">
                   <Link href="tel:+919827249743" className="focus:outline-none">
                     <GlossyPill as="div" className="flex items-center justify-center text-sm font-semibold">
                       <Phone className="h-4 w-4" />

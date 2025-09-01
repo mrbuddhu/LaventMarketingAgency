@@ -100,8 +100,8 @@ export default function CaseStudiesPage() {
           </GlossyPill>
           <h1 className="text-pretty font-sans text-3xl font-black leading-tight tracking-[-0.02em] gradient-heading sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Case Studies</h1>
           <p className="mx-auto mt-6 max-w-2xl text-xl text-balance text-muted-foreground">
-            Proof over promises—selected transformations driven by growth systems.
-          </p>
+          Proof over promises—selected transformations driven by growth systems.
+        </p>
         </div>
         
         <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">

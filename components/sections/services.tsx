@@ -165,11 +165,11 @@ function Services() {
                     <source src={s.imageQuery} type="video/mp4" />
                   </video>
                 ) : (
-                  <img
-                    alt={`${s.title} example`}
+                <img
+                  alt={`${s.title} example`}
                     src={s.imageQuery}
                     className="w-full h-auto max-h-[360px] transition-transform duration-300 group-hover:scale-105 relative z-10"
-                  />
+                />
                 )}
                 {/* Subtle overlay on hover */}
                 <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-10 bg-black z-20" />
