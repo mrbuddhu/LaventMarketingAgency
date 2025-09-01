@@ -128,9 +128,9 @@ export function SiteFooter({ className }: { className?: string }) {
                 <h4 className="text-base font-bold uppercase tracking-wide text-white">Expertise</h4>
                 <ul className="mt-4 space-y-3 text-base/6 text-white">
                   <li>Static &amp; Dynamic Ads</li>
-                  <li>Meta Funnels</li>
+                  <li>SEO with Meta Funnels</li>
                   <li>Email &amp; WhatsApp</li>
-                  <li>SEO</li>
+                  <li>Content Creation</li>
                 </ul>
               </div>
               <div className="text-center sm:text-left">
