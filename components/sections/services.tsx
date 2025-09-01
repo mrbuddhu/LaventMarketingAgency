@@ -17,7 +17,13 @@ const services: Service[] = [
     title: "Static Ads",
     short: "First impressions matter. Our static ads are designed to stop the scroll in seconds. These crisp, visually engaging designs help brands speak volumes in one frame—building awareness, curiosity, and immediate interaction. Brands using our static ads have seen an average of 3x more engagement. So ask yourself, are your competitors being seen while you're still getting ignored?",
     imageQuery: "/services/static.jpg",
-    caseStudy: { slug: "pink-matter", brand: "X Brand" },
+    caseStudy: { 
+      slug: "pink-matter", 
+      brand: "X Brand",
+      title: "Static Ads Campaign",
+      results: "3x more engagement, 40% increase in brand awareness",
+      description: "Created compelling static ads that stopped the scroll and drove significant engagement for X Brand's product launch."
+    },
   },
   {
     title: "Dynamic Ads",
@@ -65,6 +71,7 @@ const services: Service[] = [
 
 function Services() {
   const [selectedService, setSelectedService] = useState<any>(null)
+  const [selectedCaseStudy, setSelectedCaseStudy] = useState<any>(null)
   const trackRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -78,7 +85,8 @@ function Services() {
     const el = trackRef.current
     if (!el) return
     const card = el.querySelector<HTMLElement>("[data-card]")
-    const delta = card ? card.offsetWidth + 24 : 320
+    const gap = 24 // 6 * 4 (gap-6 = 1.5rem = 24px)
+    const delta = card ? card.offsetWidth + gap : 320
     el.scrollBy({ left: dir === "next" ? delta : -delta, behavior: "smooth" })
   }
 
@@ -112,8 +120,8 @@ function Services() {
               key={s.title}
               className={cn(
                 "group flex-none snap-start cursor-pointer",
-                // 1-up on phones, ~3-up on desktop (each card ~33% width) - mobile reduced more
-                "w-[calc(86%-20px)] sm:w-[calc(60%-5px)] md:w-[calc(48%-5px)] lg:w-[calc(32%-5px)]",
+                // Balanced widths - not too wide, no gaps, maintain height
+                "w-[260px] sm:w-[280px] md:w-[300px] lg:w-[320px] xl:w-[340px]",
               )}
               data-card
               onClick={() => setSelectedService(s)}
@@ -121,14 +129,14 @@ function Services() {
             >
               {/* Portrait media */}
               <div className="relative overflow-hidden rounded-3xl bg-muted shadow-2xl ring-1 ring-foreground/10">
-                {/* Hero Image/Video - Larger */}
+                {/* Hero Image/Video - Adaptive height */}
                 {s.imageQuery.endsWith('.mp4') ? (
                   <video
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="h-[360px] w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-auto max-h-[360px] transition-transform duration-300 group-hover:scale-105"
                   >
                     <source src={s.imageQuery} type="video/mp4" />
                   </video>
@@ -136,7 +144,7 @@ function Services() {
                   <img
                     alt={`${s.title} example`}
                     src={s.imageQuery}
-                    className="h-[360px] w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-auto max-h-[360px] transition-transform duration-300 group-hover:scale-105"
                   />
                 )}
                 {/* Subtle overlay on hover */}
@@ -181,14 +189,14 @@ function Services() {
               <X className="h-5 w-5" />
             </button>
             
-            <div className="relative h-64 md:h-80 w-full overflow-hidden rounded-t-2xl">
+            <div className="relative w-full overflow-hidden rounded-t-2xl">
               {selectedService.imageQuery.endsWith('.mp4') ? (
                 <video
                   autoPlay
                   loop
                   muted
                   playsInline
-                  className="w-full h-full object-contain"
+                  className="w-full h-auto max-h-80"
                 >
                   <source src={selectedService.imageQuery} type="video/mp4" />
                 </video>
@@ -196,7 +204,7 @@ function Services() {
                 <img
                   src={selectedService.imageQuery}
                   alt={selectedService.title}
-                  className="w-full h-full object-contain"
+                  className="w-full h-auto max-h-80"
                 />
               )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
@@ -212,13 +220,54 @@ function Services() {
                     <p className="text-xs font-semibold text-primary uppercase tracking-wide">Case Study</p>
                     <p className="text-sm font-semibold text-foreground">{selectedService.caseStudy.brand}</p>
                   </div>
-                  <a 
-                    href={`/case-studies/${selectedService.caseStudy.slug}`}
-                    className="text-sm font-semibold text-primary hover:underline"
+                  <button 
+                    onClick={() => setSelectedCaseStudy(selectedService.caseStudy)}
+                    className="text-sm font-semibold text-primary hover:underline cursor-pointer"
                   >
                     View case study →
-                  </a>
+                  </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Case Study Modal */}
+      {selectedCaseStudy && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+          <div className="relative max-w-2xl w-full max-h-[90vh] overflow-y-auto rounded-2xl bg-white shadow-2xl">
+            <button
+              onClick={() => setSelectedCaseStudy(null)}
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/80 backdrop-blur hover:bg-white transition-colors"
+            >
+              <X className="h-5 w-5" />
+            </button>
+            
+            <div className="p-6 md:p-8">
+              <div className="mb-6">
+                <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Case Study</p>
+                <h2 className="text-2xl font-black gradient-heading mb-2">{selectedCaseStudy.title}</h2>
+                <p className="text-lg font-semibold text-foreground">{selectedCaseStudy.brand}</p>
+              </div>
+              
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold text-foreground mb-3">Results</h3>
+                <p className="text-muted-foreground leading-relaxed">{selectedCaseStudy.results}</p>
+              </div>
+              
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold text-foreground mb-3">What We Did</h3>
+                <p className="text-muted-foreground leading-relaxed">{selectedCaseStudy.description}</p>
+              </div>
+              
+              <div className="pt-4 border-t border-foreground/10">
+                <button
+                  onClick={() => setSelectedCaseStudy(null)}
+                  className="w-full px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-colors"
+                >
+                  Close Case Study
+                </button>
               </div>
             </div>
           </div>
