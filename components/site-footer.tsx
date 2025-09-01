@@ -76,7 +76,7 @@ export function SiteFooter({ className }: { className?: string }) {
               </div>
               <div className="mt-6 space-y-3">
                 <Link href="/contact" className="focus:outline-none">
-                  <GlossyPill as="div" className="cursor-pointer text-base font-semibold">
+                  <GlossyPill as="div" className="cursor-pointer text-sm font-semibold whitespace-nowrap">
                     Free Strategy Session
                   </GlossyPill>
                 </Link>

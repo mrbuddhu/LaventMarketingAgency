@@ -21,10 +21,11 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-background" id="home">
-      <div className="mx-auto max-w-6xl px-3 py-8 sm:px-4 sm:py-12 md:px-6 md:py-16 lg:px-8">
-        {/* Hero Content */}
-        <div className="mt-2">
-          <div className="space-y-4 sm:space-y-6">
+      <div className="mx-auto max-w-7xl px-3 py-8 sm:px-4 sm:py-12 md:px-6 md:py-16 lg:px-8">
+        {/* Hero Content Grid */}
+        <div className="mt-2 grid items-start gap-6 sm:gap-8 md:gap-10 lg:grid-cols-5 lg:gap-8">
+          {/* Left Column - Text Content */}
+          <div className="space-y-4 sm:space-y-6 order-2 lg:order-1 lg:col-span-3">
 
             {/* Glossy pill without using logo/wordmark */}
             <div className="text-center sm:text-left">
@@ -44,6 +45,24 @@ export function Hero() {
                  <span className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-accent to-primary rounded-full transform scale-x-100 transition-transform duration-500 origin-left" style={{ borderRadius: '50% 50% 0 0' }}></span>
                </span>.
              </h1>
+
+                        {/* Mobile Video - After Impact Text */}
+            <div className="lg:hidden mt-4">
+              <img
+                src="/videos/hero.gif"
+                alt="Hero Animation"
+                className="w-full h-auto"
+                style={{ 
+                  background: 'white',
+                  margin: '0',
+                  padding: '0',
+                  backgroundColor: 'white',
+                  mixBlendMode: 'multiply',
+                  borderRadius: '12px'
+                }}
+              />
+            </div>
+
                          <p className="max-w-prose text-center sm:text-left text-base sm:text-lg text-balance text-muted-foreground">
               {descriptionWords.map((word, index) => (
                 <span
@@ -85,7 +104,24 @@ export function Hero() {
             </ul>
           </div>
 
-
+                              {/* Right Column - Video (Desktop Only) */}
+          <div className="hidden lg:flex items-start justify-center lg:justify-end order-1 lg:order-2 lg:col-span-2 pt-8">
+            <img
+              src="/videos/hero.gif"
+              alt="Hero Animation"
+              className="w-full h-auto max-w-2xl"
+              style={{ 
+                background: 'white',
+                margin: '0',
+                padding: '0',
+                backgroundColor: 'white',
+                height: '300px',
+                objectFit: 'contain',
+                mixBlendMode: 'multiply',
+                borderRadius: '12px'
+              }}
+            />
+          </div>
         </div>
       </div>
     </section>
