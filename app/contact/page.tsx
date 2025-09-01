@@ -17,7 +17,7 @@ export default function ContactPage() {
         <div className="flex justify-center">
           <form
             className="grid gap-4 sm:gap-6 max-w-xl w-full px-4 sm:px-0"
-            action="https://formsubmit.co/laavent.co@gmail.com"
+            action="https://formsubmit.co/elevate@laventmarketing.com"
             method="POST"
           >
             <input type="hidden" name="_subject" value="New Contact Form Submission - Lavent Marketing" />
