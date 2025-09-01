@@ -55,12 +55,19 @@ export function WhyChooseUs() {
           {reasons.map((reason, index) => {
             const IconComponent = reason.icon
             return (
-              <div key={index} className="group rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 p-6 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                  <IconComponent className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-500" />
+              <div key={index} className="group relative overflow-hidden rounded-2xl glass-shell glass-strong supports-[backdrop-filter]:backdrop-blur-xl backdrop-saturate-150 text-white ring-1 ring-white/15 p-6 hover:shadow-3xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer transform-gpu perspective-1000"
+                   style={{ boxShadow: "0 44px 120px rgba(0,0,0,0.42)" }}>
+                {/* top gloss band */}
+                <div className="pointer-events-none absolute -top-12 left-1/2 h-28 w-[92%] -translate-x-1/2 rounded-full bg-white/25 blur-2xl" aria-hidden="true" />
+                {/* radial glow */}
+                <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(60% 40% at 50% 0%, rgba(255,255,255,0.20), transparent 60%)" }} aria-hidden="true" />
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2" style={{ background: "linear-gradient(to bottom, rgba(255,255,255,0.18), rgba(255,255,255,0.06), transparent)" }} aria-hidden="true" />
+                <div className="pointer-events-none absolute inset-0 shadow-[inset_0_-44px_88px_rgba(0,0,0,0.25)]" aria-hidden="true" />
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                  <IconComponent className="h-6 w-6 text-white group-hover:scale-110 transition-transform duration-500" />
                 </div>
-                                 <h3 className="mb-3 text-xl font-bold gradient-heading">{reason.title}</h3>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                                 <h3 className="mb-3 text-xl font-bold text-white">{reason.title}</h3>
+                <p className="text-base text-white/90 leading-relaxed">
                   {reason.description}
                 </p>
               </div>

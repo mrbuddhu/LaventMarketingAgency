@@ -135,6 +135,24 @@ function Services() {
             >
               {/* Portrait media */}
               <div className="relative overflow-hidden rounded-3xl bg-muted shadow-2xl ring-1 ring-foreground/10">
+                {/* Blurred background for Dynamic Ads on desktop only */}
+                {s.title === "Dynamic Ads" && (
+                  <>
+                    {/* Blurred background video */}
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="absolute inset-0 w-full h-full object-cover filter blur-sm scale-110 lg:block hidden"
+                    >
+                      <source src={s.imageQuery} type="video/mp4" />
+                    </video>
+                    {/* Blurred background image fallback */}
+                    <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 lg:block hidden" />
+                  </>
+                )}
+                
                 {/* Hero Image/Video - Adaptive height */}
                 {s.imageQuery.endsWith('.mp4') ? (
                   <video
@@ -142,7 +160,7 @@ function Services() {
                     loop
                     muted
                     playsInline
-                    className="w-full h-auto max-h-[360px] transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-auto max-h-[360px] transition-transform duration-300 group-hover:scale-105 relative z-10"
                   >
                     <source src={s.imageQuery} type="video/mp4" />
                   </video>
@@ -150,11 +168,11 @@ function Services() {
                   <img
                     alt={`${s.title} example`}
                     src={s.imageQuery}
-                    className="w-full h-auto max-h-[360px] transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-auto max-h-[360px] transition-transform duration-300 group-hover:scale-105 relative z-10"
                   />
                 )}
                 {/* Subtle overlay on hover */}
-                <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-10 bg-black" />
+                <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-10 bg-black z-20" />
               </div>
               {/* Content */}
               <div className="mt-4 p-4">

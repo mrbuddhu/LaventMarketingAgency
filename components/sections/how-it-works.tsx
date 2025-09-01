@@ -61,12 +61,7 @@ export function HowItWorks() {
             <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2" style={{ background: "linear-gradient(to bottom, rgba(255,255,255,0.18), rgba(255,255,255,0.06), transparent)" }} aria-hidden="true" />
             <div className="pointer-events-none absolute inset-0 shadow-[inset_0_-44px_88px_rgba(0,0,0,0.25)]" aria-hidden="true" />
             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-              <div className="relative">
-                <Clock className="h-5 w-5 text-white group-hover:scale-110 transition-transform duration-500" />
-                <div className="absolute -right-1 -top-1 flex h-2 w-2 items-center justify-center rounded-full bg-white text-xs font-bold text-primary">
-                  48
-                </div>
-              </div>
+              <Clock className="h-5 w-5 text-white group-hover:scale-110 transition-transform duration-500" />
             </div>
                          <h3 className="mb-2 text-lg font-bold text-white">Lightning Execution</h3>
             <p className="text-sm text-white/90 mb-3">
@@ -78,7 +73,7 @@ export function HowItWorks() {
                 <span>48-hour turnaround</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-3 w-3 text-primary" />
+                <CheckCircle className="h-3 w-3 text-white" />
                 <span>Multiple revision rounds</span>
               </div>
               <div className="flex items-center gap-2">
@@ -110,7 +105,7 @@ export function HowItWorks() {
                 <span>Performance tracking</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-3 w-3 text-primary" />
+                <CheckCircle className="h-3 w-3 text-white" />
                 <span>Optimization & scaling</span>
               </div>
               <div className="flex items-center gap-2">
