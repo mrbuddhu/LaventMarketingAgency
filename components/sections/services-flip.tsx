@@ -59,50 +59,56 @@ const services: Service[] = [
   {
     title: "Static Ads",
     short: "First impressions matter. Our static ads are designed to stop the scroll in seconds. These crisp, visually engaging designs help brands speak volumes in one frame—building awareness, curiosity, and immediate interaction. Brands using our static ads have seen an average of 3x more engagement. So ask yourself, are your competitors being seen while you're still getting ignored?",
-    image: "/case-study-portrait-fashion-brand.png",
+    image: "/services/static.jpg",
           caseStudy: { slug: "pink-matter", brand: "X Brand", highlight: "3x sales, +70% site traffic" },
   },
   {
     title: "Dynamic Ads",
     short: "Imagine your product following your customer wherever they go online—but only when they're ready to buy. Our dynamic ads do just that, creating a hyper-personalized experience by showcasing exactly what your customers have browsed or added to cart. This isn't just retargeting—it's precision-driven conversion science that brings back leads ready to purchase.",
-    image: "/case-study-portrait-snacks.png",
+    image: "/services/dynamic.mp4",
           caseStudy: { slug: "pink-matter", brand: "X Brand", highlight: "Precision funnels that scale" },
   },
   {
     title: "Meta Ads (Facebook & Instagram)",
     short: "We're not just running ads—we're building funnels that sell. Our static + dynamic ad strategy on Meta platforms drives mass reach while smart retargeting ensures every lead counts. We've helped brands scale from zero to 6-figure revenues using this method alone. Meanwhile, others are still wasting budgets on 'boost posts'. Where do you want to be?",
-    image: "/case-study-portrait-fmcg.png",
+    image: "/services/meta.PNG",
           caseStudy: { slug: "pink-matter", brand: "X Brand", highlight: "From 0 to 6-figure revenue" },
   },
   {
     title: "Email Marketing",
     short: "Email is not dead—it's quietly converting leads at scale. Our automated email flows guide your audience from interest to action—whether it's a welcome offer, cart reminder, or loyalty win-back. Many of our clients now earn 30-40% of their total sales from email alone. While others chase cold leads, we nurture warm ones—ready to buy.",
-    image: "/case-study-portrait-nam-nam.png",
+    image: "/services/email.PNG",
           caseStudy: { slug: "dayout-snacks", brand: "X Brand", highlight: "+55% sales with flows" },
   },
   {
     title: "WhatsApp Marketing",
     short: "While others wait for customers to reply to emails, our clients are closing sales on WhatsApp—instantly. With over 90% open rates, WhatsApp campaigns cut the noise and create personal, fast-moving conversations. From product drops to customer support, it's the channel your audience already trusts—and we help you monetize it.",
-    image: "/case-study-portrait-skincare-brand.png",
+    image: "/services/whatsapp.PNG",
           caseStudy: { slug: "dayout-snacks", brand: "X Brand", highlight: "90%+ open rates" },
   },
   {
     title: "SEO for Websites",
     short: "Paid ads give you spikes. SEO gives you a mountain. We optimize your website so you consistently show up on Google when your customer is searching. It's like owning digital real estate—others are paying rent, you're building assets. Every day you delay SEO is traffic you're gifting to your competitors.",
-    image: "/case-study-nam-nam.png",
+    image: "/services/seo.PNG",
           caseStudy: { slug: "dayout-snacks", brand: "X Brand", highlight: "Owning high-intent traffic" },
   },
   {
     title: "3D Mockups for Amazon & Flipkart",
     short: "Your product's first impression on marketplaces is its last chance to convert. Our 3D mockups don't just look stunning—they boost trust and clicks, helping your products rank higher and sell faster. Customers can't touch your product—but with our visuals, they'll feel like they already have.",
-    image: "/case-study-skincare.png",
+    image: "/services/3d.jpg",
           caseStudy: { slug: "nam-nam", brand: "X Brand", highlight: "Higher CTR on marketplaces" },
   },
   {
     title: "Content Creation for Instagram",
     short: "We don't post content—we craft digital magnetism. Our Instagram strategy focuses on Reels, carousels, and trends that drive views, shares, and followers. Brands working with us have seen explosive growth in profile visits and website clicks. If content is king—engagement is the crown, and we hand it to you.",
-    image: "/case-study-portrait-fmcg.png",
+    image: "/services/content.PNG",
           caseStudy: { slug: "balaji-wafers", brand: "X Brand", highlight: "Massive engagement lift" },
+  },
+  {
+    title: "Photo & Video Shoots",
+    short: "Professional photography and videography that brings your brand to life. From product shots to lifestyle content, we create visual stories that resonate with your audience and drive engagement. High-quality visuals are the foundation of successful marketing—we make sure yours stand out from the competition.",
+    image: "/services/photovideoshoot.PNG",
+          caseStudy: { slug: "balaji-wafers", brand: "X Brand", highlight: "Professional visual content" },
   },
 ]
 
@@ -156,15 +162,52 @@ function FlippableCard({ item, index, onCardClick }: { item: Service; index: num
       >
         {/* Modern service card */}
         <div className="relative h-[480px] md:h-[420px] w-full rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 overflow-hidden hover:shadow-3xl transition-all duration-300 group-hover:scale-[1.02] group-hover:ring-2 group-hover:ring-primary/20">
-          {/* Hero Image */}
-          <div className="relative h-48 w-full overflow-hidden">
-            <Image
-              src={item.image}
-              alt={item.title}
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+          {/* Hero Image/Video */}
+          <div className="relative w-full h-48 overflow-hidden">
+            {/* Blurred background image */}
+            {item.image.endsWith('.mp4') ? (
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover filter blur-sm scale-110"
+              >
+                <source src={item.image} type="video/mp4" />
+              </video>
+            ) : (
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="absolute inset-0 w-full h-full object-cover filter blur-sm scale-110"
+              />
+            )}
+            
+            {/* Original image centered */}
+            <div className="relative flex items-center justify-center h-full">
+              {item.image.endsWith('.mp4') ? (
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="max-w-full max-h-full object-contain rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+                >
+                  <source src={item.image} type="video/mp4" />
+                </video>
+              ) : (
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={400}
+                  height={300}
+                  className="max-w-full max-h-full object-contain rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+              )}
+            </div>
+            
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
           </div>
           
           {/* Service content */}
@@ -238,13 +281,50 @@ export default function ServicesFlip() {
               <X className="h-5 w-5" />
             </button>
             
-            <div className="relative h-64 md:h-80 w-full overflow-hidden rounded-t-2xl">
-              <Image
-                src={selectedService.image}
-                alt={selectedService.title}
-                fill
-                className="object-cover"
-              />
+            <div className="relative w-full h-80 overflow-hidden rounded-t-2xl bg-gray-100">
+              {/* Blurred background image */}
+              {selectedService.image.endsWith('.mp4') ? (
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover filter blur-sm scale-110"
+                >
+                  <source src={selectedService.image} type="video/mp4" />
+                </video>
+              ) : (
+                <Image
+                  src={selectedService.image}
+                  alt={selectedService.title}
+                  fill
+                  className="absolute inset-0 w-full h-full object-cover filter blur-sm scale-110"
+                />
+              )}
+              
+              {/* Original image centered */}
+              <div className="relative flex items-center justify-center h-full">
+                {selectedService.image.endsWith('.mp4') ? (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                  >
+                    <source src={selectedService.image} type="video/mp4" />
+                  </video>
+                ) : (
+                  <Image
+                    src={selectedService.image}
+                    alt={selectedService.title}
+                    width={800}
+                    height={600}
+                    className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                  />
+                )}
+              </div>
+              
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </div>
             

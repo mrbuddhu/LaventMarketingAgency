@@ -34,25 +34,25 @@ const services: Service[] = [
   {
     title: "Meta Ads (Facebook & Instagram)",
     short: "We're not just running ads—we're building funnels that sell. Our static + dynamic ad strategy on Meta platforms drives mass reach while smart retargeting ensures every lead counts. We've helped brands scale from zero to 6-figure revenues using this method alone. Meanwhile, others are still wasting budgets on 'boost posts'. Where do you want to be?",
-    imageQuery: "Meta Ads portrait",
+    imageQuery: "/services/meta.PNG",
     caseStudy: { slug: "pink-matter", brand: "X Brand" },
   },
   {
     title: "Email Marketing",
     short: "Email is not dead—it's quietly converting leads at scale. Our automated email flows guide your audience from interest to action—whether it's a welcome offer, cart reminder, or loyalty win-back. Many of our clients now earn 30-40% of their total sales from email alone. While others chase cold leads, we nurture warm ones—ready to buy.",
-    imageQuery: "Email flows portrait",
+    imageQuery: "/services/email.PNG",
     caseStudy: { slug: "dayout-snacks", brand: "X Brand" },
   },
   {
     title: "WhatsApp Marketing",
     short: "While others wait for customers to reply to emails, our clients are closing sales on WhatsApp—instantly. With over 90% open rates, WhatsApp campaigns cut the noise and create personal, fast-moving conversations. From product drops to customer support, it's the channel your audience already trusts—and we help you monetize it.",
-    imageQuery: "WhatsApp Marketing portrait",
+    imageQuery: "/services/whatsapp.PNG",
     caseStudy: { slug: "dayout-snacks", brand: "X Brand" },
   },
   {
     title: "SEO for Websites",
     short: "Paid ads give you spikes. SEO gives you a mountain. We optimize your website so you consistently show up on Google when your customer is searching. It's like owning digital real estate—others are paying rent, you're building assets. Every day you delay SEO is traffic you're gifting to your competitors.",
-    imageQuery: "/services/seo.jpg",
+    imageQuery: "/services/seo.PNG",
     caseStudy: { slug: "dayout-snacks", brand: "X Brand" },
   },
   {
@@ -64,7 +64,13 @@ const services: Service[] = [
   {
     title: "Content Creation for Instagram",
     short: "We don't post content—we craft digital magnetism. Our Instagram strategy focuses on Reels, carousels, and trends that drive views, shares, and followers. Brands working with us have seen explosive growth in profile visits and website clicks. If content is king—engagement is the crown, and we hand it to you.",
-    imageQuery: "Instagram content portrait",
+    imageQuery: "/services/content.PNG",
+    caseStudy: { slug: "balaji-wafers", brand: "X Brand" },
+  },
+  {
+    title: "Photo & Video Shoots",
+    short: "Professional photography and videography that brings your brand to life. From product shots to lifestyle content, we create visual stories that resonate with your audience and drive engagement. High-quality visuals are the foundation of successful marketing—we make sure yours stand out from the competition.",
+    imageQuery: "/services/photovideoshoot.PNG",
     caseStudy: { slug: "balaji-wafers", brand: "X Brand" },
   },
 ]
@@ -189,14 +195,15 @@ function Services() {
               <X className="h-5 w-5" />
             </button>
             
-            <div className="relative w-full overflow-hidden rounded-t-2xl">
+            <div className="relative w-full h-80 overflow-hidden rounded-t-2xl bg-gray-100">
+              {/* Blurred background image */}
               {selectedService.imageQuery.endsWith('.mp4') ? (
                 <video
                   autoPlay
                   loop
                   muted
                   playsInline
-                  className="w-full h-auto max-h-80"
+                  className="absolute inset-0 w-full h-full object-cover filter blur-sm scale-110"
                 >
                   <source src={selectedService.imageQuery} type="video/mp4" />
                 </video>
@@ -204,9 +211,31 @@ function Services() {
                 <img
                   src={selectedService.imageQuery}
                   alt={selectedService.title}
-                  className="w-full h-auto max-h-80"
+                  className="absolute inset-0 w-full h-full object-cover filter blur-sm scale-110"
                 />
               )}
+              
+              {/* Original image centered */}
+              <div className="relative flex items-center justify-center h-full">
+                {selectedService.imageQuery.endsWith('.mp4') ? (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                  >
+                    <source src={selectedService.imageQuery} type="video/mp4" />
+                  </video>
+                ) : (
+                  <img
+                    src={selectedService.imageQuery}
+                    alt={selectedService.title}
+                    className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                  />
+                )}
+              </div>
+              
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </div>
             
