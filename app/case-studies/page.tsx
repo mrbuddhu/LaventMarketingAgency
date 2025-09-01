@@ -7,7 +7,7 @@ import { X } from "lucide-react"
 
 const studies = [
   {
-    title: "Lavent (Skincare Brand)",
+    title: "X Skincare Brand",
     body: "260% sales boost via Meta ads; full content pipeline (scripting, editing, shoots).",
     image: "/case-study-skincare.png",
     details: {
