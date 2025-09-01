@@ -112,15 +112,15 @@ function Services() {
               key={s.title}
               className={cn(
                 "group flex-none snap-start cursor-pointer",
-                // 1-up on phones, ~3-up on desktop (each card ~33% width)
-                "w-[86%] sm:w-[60%] md:w-[48%] lg:w-[32%]",
+                // 1-up on phones, ~3-up on desktop (each card ~33% width) - mobile reduced more
+                "w-[calc(86%-20px)] sm:w-[calc(60%-5px)] md:w-[calc(48%-5px)] lg:w-[calc(32%-5px)]",
               )}
               data-card
               onClick={() => setSelectedService(s)}
               aria-label={`${s.title} — ${s.caseStudy.brand} case study`}
             >
               {/* Portrait media */}
-              <div className="relative overflow-hidden rounded-2xl bg-muted shadow-2xl ring-1 ring-foreground/10">
+              <div className="relative overflow-hidden rounded-3xl bg-muted shadow-2xl ring-1 ring-foreground/10">
                 {/* Hero Image/Video - Larger */}
                 {s.imageQuery.endsWith('.mp4') ? (
                   <video
@@ -128,7 +128,7 @@ function Services() {
                     loop
                     muted
                     playsInline
-                    className="h-[400px] w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    className="h-[360px] w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   >
                     <source src={s.imageQuery} type="video/mp4" />
                   </video>
@@ -136,7 +136,7 @@ function Services() {
                   <img
                     alt={`${s.title} example`}
                     src={s.imageQuery}
-                    className="h-[400px] w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    className="h-[360px] w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 )}
                 {/* Subtle overlay on hover */}
