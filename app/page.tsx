@@ -3,6 +3,7 @@ import { Services } from "@/components/sections/services"
 import { HowItWorks } from "@/components/sections/how-it-works"
 import { WhyChooseUs } from "@/components/sections/why-choose-us"
 import HomeCaseStudiesSection from "@/components/sections/home-case-studies"
+import OffersCarousel from "@/components/sections/offers-carousel"
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       <Hero />
       <Services />
       <HowItWorks />
+      <OffersCarousel />
       <WhyChooseUs />
       <HomeCaseStudiesSection />
     </main>
