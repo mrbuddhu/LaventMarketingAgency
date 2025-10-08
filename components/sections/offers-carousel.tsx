@@ -43,9 +43,9 @@ export default function OffersCarousel() {
 
 function Marquee({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <div className={cn("relative w-full", className)}>
+    <div className={cn("relative w-full overflow-hidden", className)}>
       <div
-        className="flex w-max items-center gap-2 pr-[10%] animate-[scrollX_20s_linear_infinite] will-change-transform"
+        className="flex w-max items-center gap-2 animate-[scrollX_20s_linear_infinite] will-change-transform"
         style={{
           // Slight pull to ensure no gap appears
           transform: "translate3d(0,0,0)",
