@@ -84,6 +84,11 @@ export function SiteHeader({ className }: { className?: string }) {
                       Contact
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/store" className="text-white/90 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 ease-out">
+                      Store
+                    </Link>
+                  </li>
                 </ul>
               </NavigationMenu>
             </nav>
@@ -140,6 +145,13 @@ export function SiteHeader({ className }: { className?: string }) {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Contact
+                </Link>
+                <Link
+                  href="/store"
+                  className="block text-white/90 hover:text-white py-2 px-3 rounded-lg hover:bg-white/10 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Store
                 </Link>
                 <div className="pt-2 border-t border-white/20">
                   <a
