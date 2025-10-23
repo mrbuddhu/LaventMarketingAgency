@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { GlossyPill } from "@/components/brand/glossy-pill"
 
 export function EbookVideos() {
   return (
@@ -31,7 +32,9 @@ export function EbookVideos() {
             </div>
             <div className="mt-4 text-center">
               <Link href="/store">
-                <Button>Get The Marketing Bible</Button>
+                <GlossyPill as="div" className="cursor-pointer text-sm font-semibold">
+                  Get The Marketing Bible
+                </GlossyPill>
               </Link>
             </div>
           </div>
@@ -51,7 +54,9 @@ export function EbookVideos() {
             </div>
             <div className="mt-4 text-center">
               <Link href="/store">
-                <Button>Get The Marketing Bible</Button>
+                <GlossyPill as="div" className="cursor-pointer text-sm font-semibold">
+                  Get The Marketing Bible
+                </GlossyPill>
               </Link>
             </div>
           </div>
