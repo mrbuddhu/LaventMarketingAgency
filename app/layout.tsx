@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google"
 import "./globals.css"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { AnnouncementBar } from "@/components/announcement-bar"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${poppins.variable} antialiased`}>
       <body className="font-sans bg-background text-foreground">
+        <AnnouncementBar />
         <SiteHeader />
         <div className="min-h-[60vh]">{children}</div>
         <SiteFooter />
