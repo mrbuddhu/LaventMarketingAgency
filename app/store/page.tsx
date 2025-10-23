@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { GlossyPill } from "@/components/brand/glossy-pill"
 
 export default function StorePage() {
   return (
@@ -30,7 +31,9 @@ export default function StorePage() {
               <p className="mt-1 text-base text-foreground/80">₹329 • In stock</p>
               <div className="mt-4">
                 <Link href="https://lavent.gumroad.com/" target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full">View on Gumroad</Button>
+                  <GlossyPill as="div" className="cursor-pointer text-sm font-semibold w-full text-center">
+                    View on Gumroad
+                  </GlossyPill>
                 </Link>
               </div>
             </div>
@@ -60,7 +63,9 @@ export default function StorePage() {
 
         <div className="mt-10 text-center">
           <Link href="https://lavent.gumroad.com/" target="_blank" rel="noopener noreferrer" className="inline-block">
-            <Button variant="outline">Browse all products on Gumroad</Button>
+            <GlossyPill as="div" className="cursor-pointer text-sm font-semibold">
+              Browse all products on Gumroad
+            </GlossyPill>
           </Link>
         </div>
       </div>
