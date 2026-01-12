@@ -23,7 +23,7 @@ const studies = [
     }
   },
   {
-    title: "X Brand",
+    title: "X Nutrition Brand",
     body: "International growth; +1.3k followers and ~290% sales lift in ~3 months.",
     image: "/case-study-nam-nam.png",
     details: {
@@ -39,7 +39,7 @@ const studies = [
     }
   },
   {
-    title: "X Brand",
+    title: "X FMCG Brand",
     body: "Professional content overhaul leading to explosive reach and engagement increases.",
     image: "/case-study-portrait-fmcg.png",
     details: {
@@ -55,7 +55,7 @@ const studies = [
     }
   },
   {
-    title: "X Brand",
+    title: "X Clothing Brand",
     body: "3x sales in 2 months with static+dynamic ads; +70% website traffic via Meta, Email & WhatsApp.",
     image: "/case-study-portrait-fashion-brand.png",
     details: {
@@ -71,7 +71,7 @@ const studies = [
     }
   },
   {
-    title: "X Brand (NJ)",
+    title: "X FMCG Brand",
     body: "55% sales lift combining SEO + Meta + automated WhatsApp & email flows.",
     image: "/case-study-portrait-snacks.png",
     details: {

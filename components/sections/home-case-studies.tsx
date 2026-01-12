@@ -28,11 +28,11 @@ const CASES: Case[] = [
     description: "Implemented targeted Meta advertising strategy that resulted in significant sales growth and improved brand visibility."
   },
   {
-    title: "X Brand • +1.3k followers in 60 days",
+    title: "X Nutrition Brand • +1.3k followers in 60 days",
     metric: "290% sales boost",
     imageSrc: "/case-study-nam-nam.png",
     slug: "nam-nam",
-    brand: "X Brand",
+    brand: "X Nutrition Brand",
     results: "1.3k new followers in 60 days, 290% sales boost",
     description: "Developed comprehensive social media strategy that rapidly grew following and significantly increased sales performance."
   },
