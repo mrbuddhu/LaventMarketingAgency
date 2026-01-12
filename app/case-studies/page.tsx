@@ -107,18 +107,19 @@ export default function CaseStudiesPage() {
         <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
           {studies.map((s, index) => (
             <article 
-              key={s.title} 
+              key={`${s.title}-${index}`} 
               className="group rounded-2xl bg-white/85 backdrop-blur supports-[backdrop-filter]:backdrop-blur shadow-2xl ring-1 ring-foreground/10 overflow-hidden hover:shadow-3xl transition-all duration-300 hover:scale-[1.02] cursor-pointer"
               onClick={() => setSelectedStudy(s)}
             >
-              <div className="relative h-48 w-full overflow-hidden">
+              <div className="relative w-full overflow-hidden">
                 <Image
                   src={s.image}
                   alt={s.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
               </div>
               <div className="p-6">
                 <div className="flex items-start gap-4">
@@ -153,14 +154,26 @@ export default function CaseStudiesPage() {
               <X className="h-5 w-5" />
             </button>
             
-            <div className="relative h-64 md:h-80 w-full overflow-hidden rounded-t-2xl">
+            <div className="relative min-h-64 md:min-h-80 w-full overflow-hidden rounded-t-2xl bg-gray-100 flex items-center justify-center">
+              {/* Blurred background */}
               <Image
                 src={selectedStudy.image}
-                alt={selectedStudy.title}
+                alt=""
                 fill
-                className="object-cover"
+                className="object-cover blur-xl scale-110 opacity-50"
+                aria-hidden="true"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              {/* Actual image centered */}
+              <div className="relative z-10 w-full h-full flex items-center justify-center p-4">
+                <Image
+                  src={selectedStudy.image}
+                  alt={selectedStudy.title}
+                  width={1200}
+                  height={800}
+                  className="max-w-full max-h-[60vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>
             
             <div className="p-6 md:p-8">
