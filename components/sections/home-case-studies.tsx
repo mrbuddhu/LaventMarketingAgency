@@ -19,11 +19,11 @@ type Case = {
 
 const CASES: Case[] = [
   {
-    title: "Skincare Brand • +260% sales via Meta",
+    title: "X Skincare Brand • +260% sales via Meta",
     metric: "260% sales lift",
     imageSrc: "/case-study-skincare.png",
     slug: "skincare-brand",
-    brand: "Skincare Brand",
+    brand: "X Skincare Brand",
     results: "260% sales lift via Meta advertising campaigns",
     description: "Implemented targeted Meta advertising strategy that resulted in significant sales growth and improved brand visibility."
   },
