@@ -24,13 +24,13 @@ const FAQ_ITEMS = [
   },
   {
     id: "why-lavent",
-    question: "Why Lavent? How is it different from others?",
+    question: "How is Lavent different?",
     answer:
       "You work with senior people who own outcomes, not a revolving door of juniors. We combine brand-level creative with funnel and media discipline, ship fast with clear timelines, and focus on metrics that matter—sales, leads, and retention—not fluff. One partner for creative, ads, and lifecycle, so nothing gets lost between agencies.",
   },
   {
     id: "businesses",
-    question: "What kind of businesses do you work with?",
+    question: "Who do you work with?",
     answer:
       "We primarily work with FMCG, product, and service-based brands, and we also collaborate with any business looking to scale revenue through digital and performance marketing.",
   },
