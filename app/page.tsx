@@ -5,6 +5,7 @@ import { WhyChooseUs } from "@/components/sections/why-choose-us"
 import { EbookVideos } from "@/components/sections/ebook-videos"
 import HomeCaseStudiesSection from "@/components/sections/home-case-studies"
 import OffersCarousel from "@/components/sections/offers-carousel"
+import { SiteFaq } from "@/components/site-faq"
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <WhyChooseUs />
       <EbookVideos />
       <HomeCaseStudiesSection />
+      <SiteFaq />
     </main>
   )
 }
