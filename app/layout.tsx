@@ -26,8 +26,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${poppins.variable} antialiased`}>
-      <body className="font-sans bg-background text-foreground">
+    <html lang="en" className={`${poppins.variable} antialiased`} suppressHydrationWarning>
+      <body className="font-sans bg-background text-foreground" suppressHydrationWarning>
         <AnnouncementBar />
         <SiteHeader />
         <div className="min-h-[60vh]">{children}</div>

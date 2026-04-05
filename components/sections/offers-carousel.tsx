@@ -10,7 +10,7 @@ export default function OffersCarousel() {
     <section aria-label="Offers" className="w-full">
       <div className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 py-8 md:py-10">
         <div className="mx-auto mb-8 max-w-4xl md:mb-10">
-          <div className="group overflow-hidden rounded-2xl ring-1 ring-foreground/10 shadow-lg transition hover:ring-foreground/20 hover:shadow-xl">
+          <div className="group overflow-hidden rounded-2xl ring-1 ring-foreground/10 transition hover:ring-foreground/20">
             <video
               autoPlay
               muted
@@ -30,7 +30,7 @@ export default function OffersCarousel() {
             alt="Offer banner"
             width={BANNER_W}
             height={BANNER_H}
-            className="h-36 sm:h-40 md:h-36 lg:h-40 w-auto max-w-full rounded-2xl shadow-2xl object-contain"
+            className="h-36 sm:h-40 md:h-36 lg:h-40 w-auto max-w-full rounded-2xl object-contain"
           />
         </div>
       </div>
